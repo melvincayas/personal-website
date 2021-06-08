@@ -1,0 +1,10 @@
+.image {
+	border-radius: 50%;
+	animation: image-appear 1s ease-in-out forwards;
+}
+
+.is-vertically-centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
