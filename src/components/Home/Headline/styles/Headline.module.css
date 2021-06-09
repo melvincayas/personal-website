@@ -1,5 +1,9 @@
-.stack {
+.header {
 	animation: headline-appear 1s ease-in-out forwards;
+}
+
+.projects {
+	animation: projects-appear 1s ease-in-out forwards;
 }
 
 @keyframes headline-appear {
@@ -14,8 +18,20 @@
 	}
 }
 
+@keyframes projects-appear {
+	from {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 @media all and (max-width: 768px) {
-	.stack {
+	.header {
 		display: flex;
 		flex-direction: column-reverse;
 	}

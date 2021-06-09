@@ -1,6 +1,10 @@
 const Navbar = () => {
 	return (
-		<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+		<nav
+			class="navbar is-dark is-fixed-top"
+			role="navigation"
+			aria-label="main navigation"
+		>
 			<div class="navbar-brand has-text-white is-size-5">
 				<span class="navbar-item">Melvin Cayas</span>
 				<a
