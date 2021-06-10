@@ -12,6 +12,7 @@
 
 .increase-size {
 	transition: 0.2s ease-in-out;
+	height: 100%;
 }
 
 .increase-size:hover {
@@ -32,4 +33,9 @@
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+.card-links:hover {
+	background-color: #405de6;
+	color: white;
 }

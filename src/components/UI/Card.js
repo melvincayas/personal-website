@@ -24,7 +24,7 @@ const Card = ({ project }) => {
 				</div>
 				<div className="card-footer">
 					<a
-						className="card-footer-item"
+						className={`card-footer-item ${classes["card-links"]}`}
 						href={project.href}
 						target="_blank"
 						rel="noreferrer noopener"
@@ -32,7 +32,7 @@ const Card = ({ project }) => {
 						View
 					</a>
 					<a
-						className="card-footer-item"
+						className={`card-footer-item ${classes["card-links"]}`}
 						href={project.github}
 						target="_blank"
 						rel="noreferrer noopener"
