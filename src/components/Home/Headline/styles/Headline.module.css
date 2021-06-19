@@ -2,26 +2,10 @@
 	animation: headline-appear 1s ease-in-out forwards;
 }
 
-.projects {
-	animation: projects-appear 1s ease-in-out forwards;
-}
-
 @keyframes headline-appear {
 	from {
 		opacity: 0;
 		transform: translateY(-3rem);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes projects-appear {
-	from {
-		opacity: 0;
-		transform: translateY(3rem);
 	}
 
 	to {

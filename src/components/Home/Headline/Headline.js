@@ -1,11 +1,11 @@
+import { Fragment } from "react";
 import Intro from "./Intro";
 import ProfilePic from "./ProfilePic";
-import Projects from "../Projects/Projects";
 import classes from "./styles/Headline.module.css";
 
 const Headline = () => {
 	return (
-		<div className="container">
+		<Fragment>
 			<div className={`columns ${classes.header}`}>
 				<Intro />
 				<ProfilePic />
@@ -15,10 +15,7 @@ const Headline = () => {
 					<p className={`title ${classes.projects}`}>My Projects</p>
 				</div>
 			</div>
-			<div className={`columns ${classes.projects}`}>
-				<Projects />
-			</div>
-		</div>
+		</Fragment>
 	);
 };
 
