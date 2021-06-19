@@ -1,15 +1,18 @@
+import { NavLink } from "react-router-dom";
+import classes from "./Navbar.module.css";
+
 const Navbar = () => {
 	return (
 		<nav
-			class="navbar is-dark is-fixed-top"
+			className="navbar is-dark is-fixed-top"
 			role="navigation"
 			aria-label="main navigation"
 		>
-			<div class="navbar-brand has-text-white is-size-5">
-				<span class="navbar-item">Melvin Cayas</span>
+			<div className="navbar-brand has-text-white is-size-5">
+				<span className="navbar-item">Melvin Cayas</span>
 				<a
 					role="button"
-					class="navbar-burger"
+					className="navbar-burger"
 					id="burger"
 					aria-label="menu"
 					aria-expanded="false"
@@ -21,22 +24,35 @@ const Navbar = () => {
 				</a>
 			</div>
 
-			<div class="navbar-menu" id="nav-links">
-				<div class="navbar-end">
-					<div class="navbar-item">
-						<a class="is-size-5" href="#">
+			<div className="navbar-menu" id="nav-links">
+				<div className="navbar-end">
+					<div className="navbar-item">
+						<NavLink
+							exact
+							className="is-size-5"
+							activeClassName={classes.active}
+							to="/"
+						>
 							Home
-						</a>
+						</NavLink>
 					</div>
-					<div class="navbar-item">
-						<a class="is-size-5" href="#">
+					<div className="navbar-item">
+						<NavLink
+							className="is-size-5"
+							activeClassName={classes.active}
+							to="/projects"
+						>
+							Projects
+						</NavLink>
+					</div>
+					<div className="navbar-item">
+						<NavLink
+							className="is-size-5"
+							activeClassName={classes.active}
+							to="/resume"
+						>
 							Resume
-						</a>
-					</div>
-					<div class="navbar-item">
-						<a class="is-size-5" href="#">
-							Contact
-						</a>
+						</NavLink>
 					</div>
 				</div>
 			</div>

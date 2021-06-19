@@ -1,8 +1,8 @@
-import { Fragment } from "react";
-import Card from "../../UI/Card";
-import poster from "../../../assets/poster.png";
-import writeoff from "../../../assets/writeoff.png";
-import mathwhizard from "../../../assets/mathwhizard.png";
+import Card from "../UI/Card";
+import poster from "../../assets/poster.png";
+import writeoff from "../../assets/writeoff.png";
+import mathwhizard from "../../assets/mathwhizard.png";
+import classes from "./styles/Projects.module.css";
 
 const Projects = () => {
 	const projects = [
@@ -36,11 +36,11 @@ const Projects = () => {
 	];
 
 	return (
-		<Fragment>
+		<div className={`columns is-multiline ${classes.projects}`}>
 			{projects.map(project => (
 				<Card project={project} />
 			))}
-		</Fragment>
+		</div>
 	);
 };
 

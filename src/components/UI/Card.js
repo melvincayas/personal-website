@@ -2,7 +2,7 @@ import classes from "./Card.module.css";
 
 const Card = ({ project }) => {
 	return (
-		<div className="column is-one-third px-5">
+		<div className="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd px-5">
 			<div className={`card ${classes["increase-size"]}`}>
 				<div className={`card-image ${classes["image-container"]}`}>
 					<figure className="image is-square">
