@@ -11,3 +11,18 @@
 	color: white;
 	border-bottom: 1px solid white;
 }
+
+@media all and (max-width: 1023px) {
+	.active {
+		color: crimson !important;
+	}
+
+	.nav-links {
+		color: black;
+	}
+
+	.nav-links:hover {
+		color: black;
+		border-bottom: 1px solid black;
+	}
+}
