@@ -4,9 +4,9 @@ import classes from "./styles/Home.module.css";
 
 const Home = () => {
 	return (
-		<div className={`columns ${classes.header}`}>
-			<Intro />
+		<div className={`columns is-multiline ${classes.header}`}>
 			<ProfilePic />
+			<Intro />
 		</div>
 	);
 };

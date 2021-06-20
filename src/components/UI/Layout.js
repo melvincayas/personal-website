@@ -1,13 +1,14 @@
 import { Fragment } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import classes from "./styles/Layout.module.css";
 
 const Layout = props => {
 	return (
 		<Fragment>
 			<Navbar />
-			<div className="App container">
-				<main class="columns mt-5">
+			<div className={`App container ${classes.container}`}>
+				<main class={`columns ${classes.main}`}>
 					<div className="column is-10 is-offset-1">{props.children}</div>
 				</main>
 			</div>

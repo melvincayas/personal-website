@@ -1,6 +1,6 @@
 const Intro = () => {
 	return (
-		<div className="column is-three-fifths px-5">
+		<div className="column is-three-fifths is-offset-one-fifth px-5">
 			<div className="card">
 				<div className="card-content">
 					<p className="subtitle has-text-black">
