@@ -8,7 +8,7 @@ const NavbarLinks = () => {
 				<div className="navbar-item">
 					<NavLink
 						exact
-						className="is-size-5"
+						className={`is-size-5 ${classes["nav-links"]}`}
 						activeClassName={classes.active}
 						to="/"
 					>
@@ -17,7 +17,7 @@ const NavbarLinks = () => {
 				</div>
 				<div className="navbar-item">
 					<NavLink
-						className="is-size-5"
+						className={`is-size-5 ${classes["nav-links"]}`}
 						activeClassName={classes.active}
 						to="/projects"
 					>
@@ -26,7 +26,7 @@ const NavbarLinks = () => {
 				</div>
 				<div className="navbar-item">
 					<NavLink
-						className="is-size-5"
+						className={`is-size-5 ${classes["nav-links"]}`}
 						activeClassName={classes.active}
 						to="/resume"
 					>

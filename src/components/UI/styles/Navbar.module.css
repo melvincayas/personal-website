@@ -1,3 +1,13 @@
 .active {
+	color: salmon !important;
+	border: none !important;
+}
+
+.nav-links {
 	color: white;
+}
+
+.nav-links:hover {
+	color: white;
+	border-bottom: 1px solid white;
 }
