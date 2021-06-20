@@ -26,7 +26,7 @@ export const projects = [
 		img: writeoff,
 		alt: "To-Do List",
 		content:
-			"Currently on-going MERN-stack project creating a website with user authentication fo5r creating, sharing, and leaving notes on To-Do lists.",
+			"Currently on-going MERN-stack project creating a website with user authentication for creating, sharing, and leaving notes on To-Do lists.",
 		href: "",
 		github: "https://github.com/melvincayas/todo",
 	},
