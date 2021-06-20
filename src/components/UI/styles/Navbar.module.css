@@ -1,28 +1,17 @@
+.name {
+	color: black;
+}
+
 .active {
-	color: salmon !important;
+	color: crimson !important;
 	border: none !important;
 }
 
 .nav-links {
-	color: white;
+	color: black;
 }
 
 .nav-links:hover {
-	color: white;
-	border-bottom: 1px solid white;
-}
-
-@media all and (max-width: 1023px) {
-	.active {
-		color: crimson !important;
-	}
-
-	.nav-links {
-		color: black;
-	}
-
-	.nav-links:hover {
-		color: black;
-		border-bottom: 1px solid black;
-	}
+	color: crimson;
+	border-bottom: 1px solid crimson;
 }

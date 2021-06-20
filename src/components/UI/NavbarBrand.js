@@ -1,7 +1,9 @@
+import classes from "./styles/Navbar.module.css";
+
 const NavbarBrand = () => {
 	return (
-		<div className="navbar-brand has-text-white is-size-5">
-			<span className="navbar-item">Melvin Cayas</span>
+		<div className="navbar-brand is-size-5">
+			<span className={`navbar-item ${classes.name}`}>Melvin Cayas</span>
 			<a
 				role="button"
 				className="navbar-burger"

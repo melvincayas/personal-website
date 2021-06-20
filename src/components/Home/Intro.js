@@ -1,3 +1,5 @@
+import classes from "../Projects/styles/ProjectCard.module.css";
+
 const Intro = () => {
 	return (
 		<div className="column is-three-fifths is-offset-one-fifth px-5">

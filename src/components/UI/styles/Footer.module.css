@@ -1,9 +1,6 @@
 .footer {
+	background-color: whitesmoke;
 	margin-top: auto;
 	padding: 1em;
-}
-
-.footer-content {
-	display: flex;
-	justify-content: space-between;
+	text-align: right;
 }

@@ -4,7 +4,7 @@ import NavbarLinks from "./NavbarLinks";
 const Navbar = () => {
 	return (
 		<nav
-			className="navbar is-dark is-fixed-top"
+			className="navbar is-fixed-top"
 			role="navigation"
 			aria-label="main navigation"
 		>
