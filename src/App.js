@@ -5,7 +5,7 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import "./App.css";
 
-function App() {
+const App = () => {
 	return (
 		<Layout>
 			<Switch>
@@ -24,6 +24,6 @@ function App() {
 			</Switch>
 		</Layout>
 	);
-}
+};
 
 export default App;
