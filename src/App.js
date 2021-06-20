@@ -1,8 +1,8 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 import Layout from "./components/UI/Layout";
-import Headline from "./components/Home/Headline/Headline";
-import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/Resume";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 import "./App.css";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 		<Layout>
 			<Switch>
 				<Route path="/" exact>
-					<Headline />
+					<Home />
 				</Route>
 				<Route path="/projects">
 					<Projects />

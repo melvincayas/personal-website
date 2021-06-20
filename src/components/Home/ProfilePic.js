@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import picture from "../../../assets/IMG_2842.jpg";
+import picture from "../../assets/IMG_2842.jpg";
 import classes from "./styles/ProfilePic.module.css";
 
 const ProfilePic = () => {
