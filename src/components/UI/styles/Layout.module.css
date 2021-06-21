@@ -1,4 +1,4 @@
-.container {
+/* .container {
 	position: relative;
 }
 
@@ -7,3 +7,11 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+@media all and (max-width: 767px) {
+	.main {
+		margin-top: 2em;
+		top: 0;
+		transform: translateY(0);
+	}
+} */

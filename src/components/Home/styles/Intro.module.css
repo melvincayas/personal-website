@@ -1,22 +1,24 @@
-.header {
+.intro {
 	animation: headline-appear 1s ease-in-out forwards;
+}
+
+.card-link {
+	color: #405de6;
+}
+
+.card-links:hover {
+	background-color: #405de6;
+	color: white;
 }
 
 @keyframes headline-appear {
 	from {
 		opacity: 0;
-		transform: translateY(-3rem);
+		transform: translateY(3rem);
 	}
 
 	to {
 		opacity: 1;
 		transform: translateY(0);
-	}
-}
-
-@media all and (max-width: 768px) {
-	.header {
-		display: flex;
-		flex-direction: column-reverse;
 	}
 }

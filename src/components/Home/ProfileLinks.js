@@ -3,9 +3,11 @@ import classes from "./styles/ProfilePic.module.css";
 const ProfileLinks = () => {
 	return (
 		<div>
-			<i
-				className={`far fa-envelope p-2 is-size-5 ${classes.btn} ${classes.email}`}
-			></i>
+			<a href="mailto:cayasmj@gmail.com?Subject=Hi,%20Melvin!">
+				<i
+					className={`far fa-envelope p-2 is-size-5 ${classes.btn} ${classes.email}`}
+				></i>
+			</a>
 			<a
 				className={classes["github-link"]}
 				href="https://github.com/melvincayas"

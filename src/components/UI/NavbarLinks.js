@@ -33,6 +33,15 @@ const NavbarLinks = () => {
 						Resume
 					</NavLink>
 				</div>
+				<div className="navbar-item">
+					<NavLink
+						className={`is-size-5 ${classes["nav-links"]}`}
+						activeClassName={classes.active}
+						to="/contact"
+					>
+						Contact
+					</NavLink>
+				</div>
 			</div>
 		</div>
 	);

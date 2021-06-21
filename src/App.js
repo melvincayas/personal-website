@@ -18,6 +18,10 @@ const App = () => {
 				<Route path="/resume">
 					<Resume />
 				</Route>
+				<Route path="/contact">
+					<Resume />
+				</Route>
+
 				<Route path="*">
 					<Redirect to="/" />
 				</Route>

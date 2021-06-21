@@ -35,6 +35,10 @@
 	text-align: center;
 }
 
+.card-links {
+	color: #405de6;
+}
+
 .card-links:hover {
 	background-color: #405de6;
 	color: white;

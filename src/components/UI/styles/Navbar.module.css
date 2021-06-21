@@ -3,7 +3,7 @@
 }
 
 .active {
-	color: crimson !important;
+	color: #405de6 !important;
 	border: none !important;
 }
 
@@ -12,6 +12,6 @@
 }
 
 .nav-links:hover {
-	color: crimson;
-	border-bottom: 1px solid crimson;
+	color: black;
+	border-bottom: 1px solid black;
 }
