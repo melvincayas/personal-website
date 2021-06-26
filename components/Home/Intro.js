@@ -28,23 +28,20 @@ const Intro = () => {
 					</p>
 				</div>
 				<div className="card-footer">
-					<Link
-						className={`card-footer-item ${classes["card-links"]}`}
-						href="/projects"
-					>
-						Projects
+					<Link href="/projects">
+						<a className={`card-footer-item ${classes["card-links"]}`}>
+							Projects
+						</a>
 					</Link>
-					<Link
-						className={`card-footer-item ${classes["card-links"]}`}
-						href="/resume"
-					>
-						Resume
+					<Link href="/resume">
+						<a className={`card-footer-item ${classes["card-links"]}`}>
+							Resume
+						</a>
 					</Link>
-					<Link
-						className={`card-footer-item ${classes["card-links"]}`}
-						href="/contact"
-					>
-						Contact
+					<Link href="/contact">
+						<a className={`card-footer-item ${classes["card-links"]}`}>
+							Contact
+						</a>
 					</Link>
 				</div>
 			</div>
