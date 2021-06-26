@@ -1,4 +1,4 @@
-import classes from "./styles/Navbar.module.css";
+import classes from "../../styles/UI/Navbar.module.css";
 
 const NavbarBrand = () => {
 	return (
