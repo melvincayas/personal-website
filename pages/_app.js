@@ -1,12 +1,18 @@
+import { Fragment } from "react";
+import Head from "next/head";
 import Layout from "../components/UI/Layout";
-import "bulma/css/bulma.min.css";
 import "./global.css";
 
 const MyApp = ({ Component, pageProps }) => {
 	return (
-		<Layout>
-			<Component {...pageProps} />
-		</Layout>
+		<Fragment>
+			<Head>
+				<title>Melvin Cayas</title>
+			</Head>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</Fragment>
 	);
 };
 

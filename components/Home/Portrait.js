@@ -4,7 +4,11 @@ import classes from "./styles/ProfilePic.module.css";
 
 const Portrait = () => {
 	return (
-		<Image className={`${classes.image}`} src={picture} alt="Melvin smiling" />
+		<Image
+			className={`${classes.image}`}
+			src={picture}
+			alt="Melvin Cayas smiling"
+		/>
 	);
 };
 
