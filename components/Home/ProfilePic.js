@@ -1,6 +1,6 @@
 import Portrait from "./Portrait";
 import ProfileLinks from "./ProfileLinks";
-import classes from "./styles/ProfilePic.module.css";
+import classes from "../../styles/Home/ProfilePic.module.css";
 
 const ProfilePic = () => {
 	return (

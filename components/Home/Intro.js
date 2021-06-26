@@ -1,5 +1,5 @@
 import Link from "next/link";
-import classes from "./styles/Intro.module.css";
+import classes from "../../styles/Home/Intro.module.css";
 
 const Intro = () => {
 	return (

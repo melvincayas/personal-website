@@ -1,6 +1,6 @@
 import Image from "next/image";
 import picture from "../../public/assets/IMG_2842.jpg";
-import classes from "./styles/ProfilePic.module.css";
+import classes from "../../styles/Home/ProfilePic.module.css";
 
 const Portrait = () => {
 	return (
