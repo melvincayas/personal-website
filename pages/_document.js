@@ -22,7 +22,7 @@ class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 						rel="stylesheet"
 					/>
-					<script src="scripts/navbar.js"></script>
+					<script defer src="scripts/navbar.js"></script>
 				</Head>
 				<body className="has-navbar-fixed-top">
 					<Main />
