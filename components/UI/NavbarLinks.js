@@ -6,25 +6,22 @@ const NavbarLinks = () => {
 		<div className="navbar-menu" id="nav-links">
 			<div className="navbar-end">
 				<div className="navbar-item">
-					<Link exact className={`is-size-5 ${classes["nav-links"]}`} href="/">
+					<Link href="/">
 						<a className={`is-size-5 ${classes["nav-links"]}`}>Home</a>
 					</Link>
 				</div>
 				<div className="navbar-item">
-					<Link
-						className={`is-size-5 ${classes["nav-links"]}`}
-						href="/projects"
-					>
+					<Link href="/projects">
 						<a className={`is-size-5 ${classes["nav-links"]}`}>Projects</a>
 					</Link>
 				</div>
 				<div className="navbar-item">
-					<Link className={`is-size-5 ${classes["nav-links"]}`} href="/resume">
+					<Link href="/resume">
 						<a className={`is-size-5 ${classes["nav-links"]}`}>Resume</a>
 					</Link>
 				</div>
 				<div className="navbar-item">
-					<Link className={`is-size-5 ${classes["nav-links"]}`} href="/contact">
+					<Link href="/contact">
 						<a className={`is-size-5 ${classes["nav-links"]}`}>Contact</a>
 					</Link>
 				</div>

@@ -6,7 +6,7 @@ const Projects = () => {
 	return (
 		<div className={`columns is-multiline ${classes.projects}`}>
 			{projects.map(project => (
-				<ProjectCard project={project} />
+				<ProjectCard key={project.id} project={project} />
 			))}
 		</div>
 	);

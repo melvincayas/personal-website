@@ -4,6 +4,7 @@ import mathwhizard from "../assets/mathwhizard.png";
 
 export const projects = [
 	{
+		id: 1,
 		title: "Math Whizard",
 		img: mathwhizard,
 		alt: "Math game",
@@ -13,6 +14,7 @@ export const projects = [
 		github: "https://github.com/melvincayas/math-whizard",
 	},
 	{
+		id: 2,
 		title: "Poster",
 		img: poster,
 		alt: "Social media website",
@@ -22,6 +24,7 @@ export const projects = [
 		github: "https://github.com/melvincayas/Poster-App",
 	},
 	{
+		id: 3,
 		title: "WriteOff",
 		img: writeoff,
 		alt: "To-Do List",
