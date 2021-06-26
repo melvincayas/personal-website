@@ -1,4 +1,4 @@
-import classes from "./styles/ProjectCard.module.css";
+import classes from "../../styles/Projects/ProjectCard.module.css";
 
 const CardFooter = ({ project }) => {
 	return (

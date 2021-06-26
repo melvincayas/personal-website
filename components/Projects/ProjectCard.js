@@ -1,7 +1,7 @@
 import CardImage from "./CardImage";
 import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
-import classes from "./styles/ProjectCard.module.css";
+import classes from "../../styles/Projects/ProjectCard.module.css";
 
 const Card = ({ project }) => {
 	return (
