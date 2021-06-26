@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import classes from "./styles/Navbar.module.css";
 
 const NavbarLinks = () => {
@@ -6,41 +6,41 @@ const NavbarLinks = () => {
 		<div className="navbar-menu" id="nav-links">
 			<div className="navbar-end">
 				<div className="navbar-item">
-					<NavLink
+					<Link
 						exact
 						className={`is-size-5 ${classes["nav-links"]}`}
 						activeClassName={classes.active}
-						to="/"
+						href="/"
 					>
 						Home
-					</NavLink>
+					</Link>
 				</div>
 				<div className="navbar-item">
-					<NavLink
+					<Link
 						className={`is-size-5 ${classes["nav-links"]}`}
 						activeClassName={classes.active}
-						to="/projects"
+						href="/projects"
 					>
 						Projects
-					</NavLink>
+					</Link>
 				</div>
 				<div className="navbar-item">
-					<NavLink
+					<Link
 						className={`is-size-5 ${classes["nav-links"]}`}
 						activeClassName={classes.active}
-						to="/resume"
+						href="/resume"
 					>
 						Resume
-					</NavLink>
+					</Link>
 				</div>
 				<div className="navbar-item">
-					<NavLink
+					<Link
 						className={`is-size-5 ${classes["nav-links"]}`}
 						activeClassName={classes.active}
-						to="/contact"
+						href="/contact"
 					>
 						Contact
-					</NavLink>
+					</Link>
 				</div>
 			</div>
 		</div>
