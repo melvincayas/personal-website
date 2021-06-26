@@ -1,10 +1,11 @@
+import Image from "next/image";
 import classes from "./styles/ProjectCard.module.css";
 
 const CardImage = ({ project }) => {
 	return (
 		<div className={`card-image ${classes["image-container"]}`}>
 			<figure className="image is-square">
-				<img src={project.img} alt={project.alt}></img>
+				<Image src={project.img} alt={project.alt} />
 				<a href={project.href} target="_blank" rel="noreferrer noopener">
 					<div className={classes.overlay}>
 						<p className={`has-text-white ${classes["overlay-text"]}`}>

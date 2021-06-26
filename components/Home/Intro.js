@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import classes from "./styles/Intro.module.css";
 
 const Intro = () => {
@@ -30,19 +30,19 @@ const Intro = () => {
 				<div className="card-footer">
 					<Link
 						className={`card-footer-item ${classes["card-links"]}`}
-						to="/projects"
+						href="/projects"
 					>
 						Projects
 					</Link>
 					<Link
 						className={`card-footer-item ${classes["card-links"]}`}
-						to="/resume"
+						href="/resume"
 					>
 						Resume
 					</Link>
 					<Link
 						className={`card-footer-item ${classes["card-links"]}`}
-						to="/contact"
+						href="/contact"
 					>
 						Contact
 					</Link>

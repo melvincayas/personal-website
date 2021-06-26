@@ -1,4 +1,4 @@
-import Image from "./Image";
+import Portrait from "./Portrait";
 import ProfileLinks from "./ProfileLinks";
 import classes from "./styles/ProfilePic.module.css";
 
@@ -8,7 +8,7 @@ const ProfilePic = () => {
 			className={`column is-full has-text-centered px-5 mb-3 ${classes["is-vertically-centered"]}`}
 		>
 			<div>
-				<Image />
+				<Portrait />
 				<ProfileLinks />
 			</div>
 		</div>
