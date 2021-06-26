@@ -1,6 +1,6 @@
-import poster from "../../../public/assets/poster.png";
-import writeoff from "../../../public/assets/writeoff.png";
-import mathwhizard from "../../../public/assets/mathwhizard.png";
+import poster from "../assets/poster.png";
+import writeoff from "../assets/writeoff.png";
+import mathwhizard from "../assets/mathwhizard.png";
 
 export const projects = [
 	{
