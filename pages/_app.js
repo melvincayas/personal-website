@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import Layout from "../components/UI/Layout";
-import "./global.css";
+import "../styles/global.css";
 
 const MyApp = ({ Component, pageProps }) => {
 	return (
