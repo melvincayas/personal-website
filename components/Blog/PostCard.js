@@ -1,9 +1,9 @@
 import React from "react";
+import moment from "moment";
 import Image from "next/image";
 import classes from "../../styles/Projects/ProjectCard.module.css";
 
 const PostCard = ({ post }) => {
-	console.log(post.dateAdded);
 	const url = `${process.env.domain}/${post.slug}`;
 
 	return (
@@ -23,7 +23,9 @@ const PostCard = ({ post }) => {
 					<div className="card-content">
 						<div className="content">
 							<p className="title mb-2 is-4">{post.title}</p>
-							<p className="mb-2 is-5">{post.dateAdded}</p>
+							<p className="mb-2 is-5 has-text-centered">
+								<em>{moment(post.dateAdded).format("MMMM D, YYYY")}</em>
+							</p>
 							<p>{post.brief}</p>
 						</div>
 					</div>
