@@ -8,7 +8,7 @@ const NavbarLinks = () => {
 	const isHome = pathname === "/" ? classes.active : "";
 	const isProjects = pathname === "/projects" ? classes.active : "";
 	const isResume = pathname === "/resume" ? classes.active : "";
-	const isContact = pathname === "/contact" ? classes.active : "";
+	const isBlog = pathname === "/blog" ? classes.active : "";
 
 	return (
 		<div className="navbar-menu" id="nav-links">
@@ -35,9 +35,9 @@ const NavbarLinks = () => {
 					</Link>
 				</div>
 				<div className="navbar-item">
-					<Link href="/contact">
-						<a className={`is-size-5 ${classes["nav-links"]} ${isContact}`}>
-							Contact
+					<Link href="/blog">
+						<a className={`is-size-5 ${classes["nav-links"]} ${isBlog}`}>
+							Blog
 						</a>
 					</Link>
 				</div>

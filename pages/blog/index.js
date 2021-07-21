@@ -1,4 +1,4 @@
-const Resume = () => {
+const Blog = () => {
 	return (
 		<div>
 			<h1>Filler for now</h1>
@@ -6,4 +6,4 @@ const Resume = () => {
 	);
 };
 
-export default Resume;
+export default Blog;
