@@ -1,7 +1,7 @@
 .App {
 	display: flex;
 	flex-direction: column;
-	min-height: 90vh;
+	min-height: 86vh;
 }
 
 body {

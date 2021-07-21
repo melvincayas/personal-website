@@ -25,12 +25,12 @@ export const projects = [
 	},
 	{
 		id: 3,
-		title: "WriteOff",
+		title: "SurelyNoted",
 		img: writeoff,
 		alt: "To-Do List",
 		content:
 			"Currently on-going MERN-stack project creating a website with user authentication for creating, sharing, and leaving notes on To-Do lists.",
 		href: "",
-		github: "https://github.com/melvincayas/todo",
+		github: "https://github.com/melvincayas/surely-noted",
 	},
 ];
