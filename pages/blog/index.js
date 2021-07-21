@@ -1,16 +1,13 @@
-import { Fragment } from "react";
+import PostCard from "../../components/Blog/PostCard";
+import classes from "../../styles/Projects/Projects.module.css";
 
 const Blog = ({ hashnodePosts }) => {
 	return (
-		<Fragment>
+		<div className={`columns is-multiline ${classes.projects}`}>
 			{hashnodePosts.map(post => (
-				<article key={post._id}>
-					<img src={post.coverImage} />
-					<h1>{post.title}</h1>
-					<p>{post.brief}</p>
-				</article>
+				<PostCard id={post._id} post={post} />
 			))}
-		</Fragment>
+		</div>
 	);
 };
 
@@ -25,6 +22,7 @@ export const getStaticProps = async () => {
 						title
 						brief
 						slug
+						dateAdded
 					}
 				}
 			}
