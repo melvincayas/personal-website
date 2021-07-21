@@ -1,6 +1,8 @@
+import { Fragment } from "react";
+
 const Blog = ({ hashnodePosts }) => {
 	return (
-		<div>
+		<Fragment>
 			{hashnodePosts.map(post => (
 				<article key={post._id}>
 					<img src={post.coverImage} />
@@ -8,7 +10,7 @@ const Blog = ({ hashnodePosts }) => {
 					<p>{post.brief}</p>
 				</article>
 			))}
-		</div>
+		</Fragment>
 	);
 };
 
