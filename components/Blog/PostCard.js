@@ -1,47 +1,52 @@
 import React from "react";
 import moment from "moment";
 import Image from "next/image";
-import classes from "../../styles/Projects/ProjectCard.module.css";
+import blogClasses from "../../styles/Blog/Blog.module.css";
+
+const LinkWrapper = props => {
+	return (
+		<a
+			className={blogClasses.links}
+			href={props.url}
+			target="_blank"
+			rel="noreferrer noopener"
+		>
+			{props.children}
+		</a>
+	);
+};
 
 const PostCard = ({ post }) => {
 	const url = `${process.env.domain}/${post.slug}`;
 
 	return (
-		<div className="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd px-5">
-			<div className={`card ${classes["increase-size"]}`}>
-				<div className="card">
-					<figure className="image is-16by9">
-						<Image src={post.coverImage} layout="fill" alt={post.title} />
-						<a href={url} target="_blank" rel="noreferrer noopener">
-							<div className={classes.overlay}>
-								<p className={`has-text-white ${classes["overlay-text"]}`}>
-									{post.title}
-								</p>
-							</div>
-						</a>
-					</figure>
-					<div className="card-content">
-						<div className="content">
-							<p className="title mb-2 is-4">{post.title}</p>
-							<p className="mb-2 is-5 has-text-centered">
-								<em>{moment(post.dateAdded).format("MMMM D, YYYY")}</em>
-							</p>
-							<p>{post.brief}</p>
-						</div>
-					</div>
-					<div className="card-footer">
-						<a
-							className={`card-footer-item ${classes["card-links"]}`}
-							href={url}
-							target="_blank"
-							rel="noreferrer noopener"
-						>
-							Read More
-						</a>
-					</div>
-				</div>
+		<article className={`columns ${blogClasses["post-card"]}`}>
+			<div className="column is-three-fifths p-3">
+				<LinkWrapper url={url}>
+					<p className="title mb-2 is-3">{post.title}</p>
+				</LinkWrapper>
+				<LinkWrapper url={url}>
+					<p className="mb-2 is-size-5">
+						{moment(post.dateAdded).format("MMMM D, YYYY")}
+					</p>
+				</LinkWrapper>
+				<LinkWrapper url={url}>
+					<p className={blogClasses["post-description"]}>{post.brief}</p>
+				</LinkWrapper>
 			</div>
-		</div>
+			<div className="column">
+				<LinkWrapper url={url}>
+					<Image
+						className={blogClasses.image}
+						src={post.coverImage}
+						layout="responsive"
+						width={500}
+						height={300}
+						alt={post.title}
+					/>
+				</LinkWrapper>
+			</div>
+		</article>
 	);
 };
 

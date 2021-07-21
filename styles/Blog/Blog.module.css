@@ -1,0 +1,22 @@
+.post-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-bottom: 2em;
+}
+
+.post-card {
+	width: 90%;
+}
+
+.image {
+	border-radius: 8px;
+}
+
+.post-description {
+	font-size: 1.1em;
+}
+
+.links {
+	color: black;
+}

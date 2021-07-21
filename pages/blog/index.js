@@ -2,21 +2,21 @@ import { Fragment } from "react";
 import Image from "next/image";
 import PostCard from "../../components/Blog/PostCard";
 import blogLogo from "../../public/assets/bloglogo.png";
-import classes from "../../styles/Projects/Projects.module.css";
+import blogClasses from "../../styles/Blog/Blog.module.css";
 
 const Blog = ({ hashnodePosts }) => {
 	return (
 		<Fragment>
-			<div className={`mb-2 ${classes.project}`}>
+			<div className={`mb-2 ${blogClasses.project}`}>
 				<a href={process.env.domain} target="_blank" rel="noreferrer noopener">
 					<Image src={blogLogo} alt="Melvin Learns Code" />
 				</a>
 			</div>
-			<div className={`columns is-multiline ${classes.projects}`}>
+			<section className={blogClasses["post-container"]}>
 				{hashnodePosts.map(post => (
 					<PostCard id={post._id} post={post} />
 				))}
-			</div>
+			</section>
 		</Fragment>
 	);
 };
