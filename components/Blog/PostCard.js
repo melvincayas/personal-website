@@ -3,6 +3,7 @@ import Image from "next/image";
 import classes from "../../styles/Projects/ProjectCard.module.css";
 
 const PostCard = ({ post }) => {
+	console.log(post.dateAdded);
 	const url = `${process.env.domain}/${post.slug}`;
 
 	return (
