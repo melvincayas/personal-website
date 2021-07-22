@@ -6,7 +6,7 @@ import blogClasses from "../../styles/Blog/Blog.module.css";
 const LinkWrapper = props => {
 	return (
 		<a
-			className={`columns ${blogClasses.links}`}
+			className="columns"
 			href={props.url}
 			target="_blank"
 			rel="noreferrer noopener"
@@ -22,7 +22,7 @@ const PostCard = ({ post }) => {
 	return (
 		<article className={blogClasses["post-card"]}>
 			<LinkWrapper url={url}>
-				<div className="column is-three-fifths p-3">
+				<div className="column is-three-fifths">
 					<p className="title mb-2 is-3">{post.title}</p>
 					<p className="mb-2 is-size-5">
 						{moment(post.dateAdded).format("MMMM D, YYYY")}

@@ -3,7 +3,6 @@
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 2em;
-	animation: logo-appear 1s ease forwards;
 }
 
 .blog-logo {
@@ -15,12 +14,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	animation: posts-appear 1.5s ease forwards;
 }
 
 .post-card {
 	width: 90%;
-	padding: 1em;
+	padding: 1.5em;
 	border-radius: 10px;
 	background-color: white;
 	margin-bottom: 2em;
@@ -43,25 +41,4 @@
 
 .post-description {
 	font-size: 1.1em;
-}
-
-@keyframes logo-appear {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes posts-appear {
-	from {
-		opacity: 0;
-	}
-	50% {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
 }
