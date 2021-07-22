@@ -20,11 +20,21 @@
 
 .post-card {
 	width: 90%;
-	padding: 0.5em;
+	padding: 1em;
 	border-radius: 10px;
 	background-color: white;
 	margin-bottom: 2em;
 	filter: drop-shadow(4px 4px 8px #ccc);
+	transition: all 0.2s ease-in-out;
+}
+
+.post-card p {
+	color: black;
+}
+
+.post-card:hover {
+	transform: scale(1.01);
+	filter: drop-shadow(6px 6px 10px #888);
 }
 
 .post-image {
@@ -33,10 +43,6 @@
 
 .post-description {
 	font-size: 1.1em;
-}
-
-.links {
-	color: black;
 }
 
 @keyframes logo-appear {
