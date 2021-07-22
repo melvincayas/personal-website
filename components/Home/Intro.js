@@ -4,7 +4,7 @@ import classes from "../../styles/Home/Intro.module.css";
 const Intro = () => {
 	return (
 		<div
-			className={`column is-full-mobile is-10-tablet is-offset-1-tablet is-8-desktop is-offset-2-desktop is-three-fifths-widescreen is-offset-one-fifth-widescreen px-5 ${classes.intro}`}
+			className={`column is-full-mobile is-full-tablet is-three-fifths-desktop is-three-fifths-desktop is-three-fifths-widescreen px-5 ${classes.intro}`}
 		>
 			<div className="card">
 				<div className="card-content">
