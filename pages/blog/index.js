@@ -7,7 +7,7 @@ import blogClasses from "../../styles/Blog/Blog.module.css";
 const Blog = ({ hashnodePosts }) => {
 	return (
 		<Fragment>
-			<div className={blogClasses["blog-logo-container"]}>
+			<figure className={blogClasses["blog-logo-container"]}>
 				<a
 					className={blogClasses["blog-logo"]}
 					href={process.env.domain}
@@ -16,7 +16,7 @@ const Blog = ({ hashnodePosts }) => {
 				>
 					<Image src={blogLogo} alt="Melvin Learns Code" />
 				</a>
-			</div>
+			</figure>
 			<section className={blogClasses["post-container"]}>
 				{hashnodePosts.map(post => (
 					<PostCard id={post._id} post={post} />
