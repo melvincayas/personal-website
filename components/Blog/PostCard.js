@@ -37,7 +37,7 @@ const PostCard = ({ post }) => {
 			<div className="column">
 				<LinkWrapper url={url}>
 					<Image
-						className={blogClasses.image}
+						className={blogClasses["post-image"]}
 						src={post.coverImage}
 						layout="responsive"
 						width={500}

@@ -7,8 +7,13 @@ import blogClasses from "../../styles/Blog/Blog.module.css";
 const Blog = ({ hashnodePosts }) => {
 	return (
 		<Fragment>
-			<div className={`mb-3 ${blogClasses.project}`}>
-				<a href={process.env.domain} target="_blank" rel="noreferrer noopener">
+			<div className={blogClasses["blog-logo-container"]}>
+				<a
+					className={blogClasses["blog-logo"]}
+					href={process.env.domain}
+					target="_blank"
+					rel="noreferrer noopener"
+				>
 					<Image src={blogLogo} alt="Melvin Learns Code" />
 				</a>
 			</div>
