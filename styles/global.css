@@ -1,15 +1,15 @@
-.App {
-	display: flex;
-	flex-direction: column;
-	min-height: 86vh;
-}
-
 body {
 	min-height: 100vh;
-	font-family: "Roboto", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	background-color: whitesmoke;
 }
 
 nav {
 	background-color: whitesmoke !important;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	min-height: 86vh;
 }
