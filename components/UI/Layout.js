@@ -12,7 +12,7 @@ const Layout = props => {
 					<div className="column is-10 is-offset-1">{props.children}</div>
 				</div>
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</Fragment>
 	);
 };
