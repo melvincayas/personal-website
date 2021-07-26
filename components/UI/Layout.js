@@ -1,17 +1,17 @@
 import { Fragment } from "react";
 import Navbar from "../UI/Navbar";
 import Footer from "../UI/Footer";
-import classes from "../../styles/UI/Layout.module.css";
+import layoutClasses from "../../styles/UI/Layout.module.css";
 
 const Layout = props => {
 	return (
 		<Fragment>
 			<Navbar />
-			<div className={`App container ${classes.container}`}>
-				<main className={`columns mt-1 ${classes.main}`}>
+			<main className={`container ${layoutClasses.main}`}>
+				<div className="columns mt-1">
 					<div className="column is-10 is-offset-1">{props.children}</div>
-				</main>
-			</div>
+				</div>
+			</main>
 			<Footer />
 		</Fragment>
 	);
