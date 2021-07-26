@@ -1,17 +1,14 @@
-import Portrait from "./Portrait";
-import ProfileLinks from "./ProfileLinks";
+import Image from "next/image";
+import picture from "../../public/assets/IMG_2842.jpg";
 import classes from "../../styles/Home/ProfilePic.module.css";
 
 const ProfilePic = () => {
 	return (
-		<div
-			className={`column has-text-centered px-5 mb-3 ${classes["is-vertically-centered"]}`}
-		>
-			<div>
-				<Portrait />
-				<ProfileLinks />
-			</div>
-		</div>
+		<Image
+			className={`${classes.image}`}
+			src={picture}
+			alt="Melvin Cayas smiling"
+		/>
 	);
 };
 

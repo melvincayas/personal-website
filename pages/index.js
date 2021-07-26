@@ -1,13 +1,11 @@
-import Intro from "../components/Home/Intro";
-import ProfilePic from "../components/Home/ProfilePic";
+import Home from "../components/Home/Home";
 
-const Home = () => {
+const LandingPage = () => {
 	return (
-		<div className={`columns is-multiline`}>
-			<Intro />
-			<ProfilePic />
+		<div>
+			<Home />
 		</div>
 	);
 };
 
-export default Home;
+export default LandingPage;

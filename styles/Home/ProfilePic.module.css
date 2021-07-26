@@ -3,13 +3,6 @@
 	animation: image-appear 1s ease-in-out forwards;
 }
 
-.is-vertically-centered {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	animation: headline-appear 1s ease-in-out forwards;
-}
-
 .btn {
 	transition: 0.2s ease-in-out;
 }
