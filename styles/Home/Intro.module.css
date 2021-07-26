@@ -1,24 +1,18 @@
-.intro {
-	animation: headline-appear 1s ease-in-out forwards;
+.title {
+	font-size: 2.25em;
 }
 
-.card-link {
-	color: #2b95f0;
+.subtitle {
+	font-size: 1.125em;
 }
 
-.card-links:hover {
+.landing-page-button {
 	background-color: #2b95f0;
 	color: white;
+	padding: 0.65em 1.5em;
+	font-size: 1.125em;
 }
 
-@keyframes headline-appear {
-	from {
-		opacity: 0;
-		transform: translateY(3rem);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+.landing-page-button:hover {
+	background-color: #2585d8;
 }
