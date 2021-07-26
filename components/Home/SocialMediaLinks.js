@@ -1,6 +1,6 @@
 import classes from "../../styles/Home/ProfilePic.module.css";
 
-const ProfileLinks = () => {
+const SocialMediaLinks = () => {
 	return (
 		<div>
 			<a href="mailto:cayasmj@gmail.com?Subject=Hi,%20Melvin!">
@@ -32,4 +32,4 @@ const ProfileLinks = () => {
 	);
 };
 
-export default ProfileLinks;
+export default SocialMediaLinks;
