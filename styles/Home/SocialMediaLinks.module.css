@@ -1,5 +1,15 @@
+.container {
+	margin-top: 2em;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+
 .btn {
 	transition: 0.2s ease-in-out;
+	height: 1em;
+	width: 1em;
 }
 
 .btn:hover {
@@ -32,4 +42,13 @@
 
 .twitter-link {
 	color: #1da1f2;
+}
+
+.hashnode-link {
+	color: #2962ff;
+}
+
+.hashnode-link:hover {
+	background-color: #2962ff;
+	color: white;
 }
