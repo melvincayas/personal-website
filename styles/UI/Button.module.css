@@ -11,3 +11,12 @@
 .button:active {
 	transform: scale(0.99);
 }
+
+.button a {
+	color: white;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	padding: 2em;
+	margin: -2em;
+}
