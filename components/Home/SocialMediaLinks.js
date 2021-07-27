@@ -19,13 +19,23 @@ const SocialMediaLinks = () => {
 				></i>
 			</a>
 			<a
-				className={socialMediaClasses["instagram-link"]}
-				href="https://www.instagram.com/melvin.cayas/"
+				className={socialMediaClasses["linkedin-link"]}
+				href="https://www.linkedin.com/in/melvin-john-cayas-b3122534/"
 				target="_blank"
 				rel="noreferrer noopener"
 			>
 				<i
-					className={`fab fa-instagram p-2 is-size-5 ${socialMediaClasses.btn} ${socialMediaClasses.instagram}`}
+					className={`fab fa-linkedin p-2 is-size-5 ${socialMediaClasses.btn} ${socialMediaClasses.linkedin}`}
+				></i>
+			</a>
+			<a
+				className={socialMediaClasses["twitter-link"]}
+				href="https://twitter.com/melvincayas"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				<i
+					className={`fab fa-twitter p-2 is-size-5 ${socialMediaClasses.btn} ${socialMediaClasses.twitter}`}
 				></i>
 			</a>
 		</div>

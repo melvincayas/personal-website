@@ -14,14 +14,22 @@
 	background-color: black;
 }
 
-.instagram:hover {
-	background-color: #c13584;
+.linkedin:hover {
+	background-color: #2867b2;
 }
 
-.instagram-link {
-	color: #c13584;
+.twitter:hover {
+	background-color: #1da1f2;
+}
+
+.linkedin-link {
+	color: #2867b2;
 }
 
 .github-link {
 	color: black;
+}
+
+.twitter-link {
+	color: #1da1f2;
 }
