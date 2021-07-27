@@ -1,6 +1,7 @@
 .container {
 	max-width: 55%;
 	text-align: center;
+	animation: home-appear 1s ease-in-out forwards;
 }
 
 @media screen and (max-width: 1023px) {
@@ -12,5 +13,14 @@
 @media screen and (max-width: 768px) {
 	.container {
 		max-width: 90%;
+	}
+}
+
+@keyframes home-appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
