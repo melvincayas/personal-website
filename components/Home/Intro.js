@@ -1,4 +1,4 @@
-import Button from "../UI/Button";
+import Link from "../UI/Link";
 import introClasses from "../../styles/Home/Intro.module.css";
 
 const Intro = () => {
@@ -12,9 +12,9 @@ const Intro = () => {
 				learning-by-doing and loves creating value through problem-solving. My
 				goal is to impact the world with the code I type.
 			</p>
-			<Button className={introClasses["landing-page-button"]}>
-				<a href="/work">See My Work</a>
-			</Button>
+			<Link href="/work" className={introClasses["landing-page-button"]}>
+				See My Work
+			</Link>
 		</section>
 	);
 };
