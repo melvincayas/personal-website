@@ -1,35 +1,23 @@
 .container {
+	font-size: 1.5em;
 	margin-top: 2em;
-	font-size: 20px;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 }
 
-.btn {
-	transition: 0.2s ease-in-out;
-	height: 1em;
-	width: 1em;
+.link {
+	transition: 0.1s ease-in-out;
+	margin: 0 0.5em;
 }
 
-.btn:hover {
-	color: white;
+.link:hover {
+	filter: drop-shadow(6px 6px 8px #ccc);
+	transform: scale(1.1);
 }
 
-.email:hover {
-	background-color: #405de6;
-}
-
-.github:hover {
-	background-color: black;
-}
-
-.linkedin:hover {
-	background-color: #2867b2;
-}
-
-.twitter:hover {
-	background-color: #1da1f2;
+.icon {
+	padding: 0.25em;
 }
 
 .linkedin-link {
@@ -46,9 +34,6 @@
 
 .hashnode-link {
 	color: #2962ff;
-}
-
-.hashnode-link:hover {
-	background-color: #2962ff;
-	color: white;
+	display: flex;
+	align-items: center;
 }
