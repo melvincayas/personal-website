@@ -8,9 +8,7 @@ const Layout = props => {
 		<Fragment>
 			<Navbar />
 			<main className={`container ${layoutClasses.main}`}>
-				<div className="columns mt-1">
-					<div className="column is-10 is-offset-1">{props.children}</div>
-				</div>
+				{props.children}
 			</main>
 			{/* <Footer /> */}
 		</Fragment>
