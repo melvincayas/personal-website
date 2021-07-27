@@ -1,6 +1,6 @@
 import Home from "../components/Home/Home";
 
-const LandingPage = () => {
+const HomePage = () => {
 	return (
 		<div>
 			<Home />
@@ -8,4 +8,4 @@ const LandingPage = () => {
 	);
 };
 
-export default LandingPage;
+export default HomePage;
