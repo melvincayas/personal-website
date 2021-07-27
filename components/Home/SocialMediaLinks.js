@@ -3,7 +3,7 @@ import SocialMediaIcon from "./SocialMediaIcon";
 
 const SocialMediaLinks = () => {
 	return (
-		<div className={socialMediaClasses.container}>
+		<aside className={socialMediaClasses.container}>
 			<SocialMediaIcon
 				type="sameTab"
 				href="mailto:cayasmj@gmail.com?Subject=Hi,%20Melvin!"
@@ -38,7 +38,7 @@ const SocialMediaLinks = () => {
 					className="iconify"
 				></span>
 			</SocialMediaIcon>
-		</div>
+		</aside>
 	);
 };
 
