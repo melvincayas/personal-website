@@ -2,3 +2,15 @@
 	max-width: 55%;
 	text-align: center;
 }
+
+@media screen and (max-width: 1023px) {
+	.container {
+		max-width: 72.5%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 90%;
+	}
+}
