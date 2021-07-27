@@ -13,7 +13,7 @@ const Intro = () => {
 				goal is to impact the world with the code I type.
 			</p>
 			<Button className={introClasses["landing-page-button"]}>
-				See My Work
+				<a href="/work">See My Work</a>
 			</Button>
 		</section>
 	);
