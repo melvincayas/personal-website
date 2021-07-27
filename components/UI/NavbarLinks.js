@@ -6,7 +6,7 @@ const NavbarLinks = () => {
 	const { pathname } = useRouter();
 
 	const isHome = pathname === "/" ? classes.active : "";
-	const isProjects = pathname === "/projects" ? classes.active : "";
+	const isWork = pathname === "/work" ? classes.active : "";
 	const isResume = pathname === "/resume" ? classes.active : "";
 	const isBlog = pathname === "/blog" ? classes.active : "";
 
@@ -21,9 +21,9 @@ const NavbarLinks = () => {
 					</Link>
 				</div>
 				<div className="navbar-item">
-					<Link href="/projects">
-						<a className={`is-size-5 ${classes["nav-links"]} ${isProjects}`}>
-							Projects
+					<Link href="/work">
+						<a className={`is-size-5 ${classes["nav-links"]} ${isWork}`}>
+							Work
 						</a>
 					</Link>
 				</div>
