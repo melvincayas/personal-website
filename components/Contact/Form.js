@@ -41,7 +41,7 @@ const Form = () => {
 				onBlur={nameBlurHandler}
 				type="text"
 				name="name"
-				placeholder="Name"
+				placeholder={isNameError ? "Please enter a name" : "Name"}
 				className={isNameError ? contactClasses["input-error"] : ""}
 			/>
 			<Input
@@ -50,7 +50,7 @@ const Form = () => {
 				onBlur={emailBlurHandler}
 				type="email"
 				name="email"
-				placeholder="Email"
+				placeholder={isEmailError ? "Please enter an email" : "Email"}
 				className={isEmailError ? contactClasses["input-error"] : ""}
 			/>
 			<Input
@@ -59,7 +59,7 @@ const Form = () => {
 				onBlur={subjectBlurHandler}
 				type="text"
 				name="subject"
-				placeholder="Subject"
+				placeholder={isSubjectError ? "Please enter a subject" : "Subject"}
 				className={isSubjectError ? contactClasses["input-error"] : ""}
 			/>
 			<Input
@@ -68,7 +68,7 @@ const Form = () => {
 				onBlur={messageBlurHandler}
 				type="textarea"
 				name="message"
-				placeholder="Message"
+				placeholder={isMessageError ? "Please enter a message" : "Message"}
 				className={isMessageError ? contactClasses["input-error"] : ""}
 			/>
 			<ButtonLink
