@@ -1,4 +1,4 @@
-import socialMediaClasses from "../../styles/Home/SocialMediaLinks.module.css";
+import socialMediaClasses from "../../styles/UI/SocialMediaLinks.module.css";
 
 const SocialMediaIcon = props => {
 	return (

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import ProfilePic from "./ProfilePic";
 import Intro from "./Intro";
-import SocialMediaLinks from "./SocialMediaLinks";
+import SocialMediaLinks from "../UI/SocialMediaLinks";
 
 const Home = () => {
 	return (
