@@ -1,0 +1,6 @@
+.container {
+	background-color: white;
+	border-radius: 10px;
+	filter: drop-shadow(4px 4px 8px #ccc);
+	margin-bottom: 2em;
+}
