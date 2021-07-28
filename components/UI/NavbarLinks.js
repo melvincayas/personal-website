@@ -27,7 +27,7 @@ const NavbarLinks = () => {
 					</Link>
 				</div>
 				<div className="navbar-item">
-					<Link href="https://doc-08-9k-prod-00-apps-viewer.googleusercontent.com/viewer2/prod-00/pdf/qj303hqev9ug20cfs0k2suf0cocemhgh/7d1on3m84mkc9c5ihvelgno9o00308rd/1627490550000/3/*/APznzaYJgWGif8O5vyj5eJ1Gy2jlUuE3pYT29sdTbRRZQWIYdEVo513XW8QoJ1TVdBiM7p85eWN-w9a9Zo7Q-6I1Z5coihIo2y-GKh5RQNPCITsEP0MCXFTZui2HZKxphLPvnbetSWpiK4KEon9pXzDJj_1I0A9Pl8cOh2rJwLR2weqvOTSTRkU2Yuptx6KrlzhHVjRGiZ9zRCSQxiXlgXmHVdb4rAvdYSfrg0E5vqwN0zu3DmidzXa-OjWmiFQFxfviVxVm3P5LC2QqZvUoNFWXJ67-wRsW2Y4Xs6Si798RNkh4gbspDLKX56u1LAJZW26EVCTQJX0mEWvsq7vD7yX6ypA9LF7YdymMVDekBZFH-DTF24RkEjU=">
+					<Link href="https://drive.google.com/file/d/1LxtZ2go30yB9UXe914lsr2bVfj6-6ZrX/view?usp=sharing">
 						<a
 							target="_blank"
 							rel="noreferrer noopener"
