@@ -4,6 +4,7 @@ const Input = props => {
 	if (props.type === "textarea") {
 		return (
 			<textarea
+				{...props}
 				name={props.name}
 				placeholder={props.placeholder}
 				className={`${contactClasses.input} ${contactClasses.textarea}`}
@@ -14,6 +15,7 @@ const Input = props => {
 
 	return (
 		<input
+			{...props}
 			type={props.type}
 			name={props.name}
 			placeholder={props.placeholder}
