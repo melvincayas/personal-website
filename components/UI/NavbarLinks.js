@@ -15,16 +15,12 @@ const NavbarLinks = () => {
 			<div className="navbar-end">
 				<div className="navbar-item">
 					<Link href="/">
-						<a className={`is-size-5 ${classes["nav-links"]} ${isHome}`}>
-							Home
-						</a>
+						<a className={`${classes["nav-links"]} ${isHome}`}>Home</a>
 					</Link>
 				</div>
 				<div className="navbar-item">
 					<Link href="/work">
-						<a className={`is-size-5 ${classes["nav-links"]} ${isWork}`}>
-							Work
-						</a>
+						<a className={`${classes["nav-links"]} ${isWork}`}>Work</a>
 					</Link>
 				</div>
 				<div className="navbar-item">
@@ -32,7 +28,7 @@ const NavbarLinks = () => {
 						<a
 							target="_blank"
 							rel="noreferrer noopener"
-							className={`is-size-5 ${classes["nav-links"]}`}
+							className={`${classes["nav-links"]}`}
 						>
 							Resume
 						</a>
@@ -40,16 +36,12 @@ const NavbarLinks = () => {
 				</div>
 				<div className="navbar-item">
 					<Link href="/blog">
-						<a className={`is-size-5 ${classes["nav-links"]} ${isBlog}`}>
-							Blog
-						</a>
+						<a className={`${classes["nav-links"]} ${isBlog}`}>Blog</a>
 					</Link>
 				</div>
 				<div className="navbar-item">
 					<Link href="/contact">
-						<a className={`is-size-5 ${classes["nav-links"]} ${isContact}`}>
-							Contact
-						</a>
+						<a className={`${classes["nav-links"]} ${isContact}`}>Contact</a>
 					</Link>
 				</div>
 			</div>
