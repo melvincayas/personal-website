@@ -19,7 +19,7 @@ const Blog = ({ hashnodePosts }) => {
 			</figure>
 			<section className={blogClasses["post-container"]}>
 				{hashnodePosts.map(post => (
-					<PostCard id={post._id} post={post} />
+					<PostCard key={post._id} post={post} />
 				))}
 			</section>
 		</Fragment>
