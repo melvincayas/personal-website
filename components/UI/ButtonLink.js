@@ -1,6 +1,6 @@
-import linkClasses from "../../styles/UI/Link.module.css";
+import linkClasses from "../../styles/UI/ButtonLink.module.css";
 
-const Link = props => {
+const ButtonLink = props => {
 	return (
 		<a href={props.href} className={`${props.className} ${linkClasses.link}`}>
 			{props.children}
@@ -8,4 +8,4 @@ const Link = props => {
 	);
 };
 
-export default Link;
+export default ButtonLink;
