@@ -7,7 +7,7 @@ const Input = props => {
 				{...props}
 				name={props.name}
 				placeholder={props.placeholder}
-				className={`${contactClasses.input} ${contactClasses.textarea}`}
+				className={`${props.className} ${contactClasses.input} ${contactClasses.textarea}`}
 				rows="7"
 			/>
 		);
@@ -19,7 +19,7 @@ const Input = props => {
 			type={props.type}
 			name={props.name}
 			placeholder={props.placeholder}
-			className={contactClasses.input}
+			className={`${props.className} ${contactClasses.input}`}
 		/>
 	);
 };
