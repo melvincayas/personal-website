@@ -32,6 +32,10 @@
 	color: #ccc;
 }
 
+.input-error {
+	border: 1px solid crimson;
+}
+
 .textarea {
 	width: 100%;
 	margin-bottom: 2.5em;
