@@ -29,8 +29,27 @@ const Form = () => {
 		isError: isMessageError,
 	} = useInput();
 
-	const formSubmitHandler = event => {
+	const formSubmitHandler = async event => {
 		event.preventDefault();
+
+		const payload = {
+			enteredName,
+			enteredEmail,
+			enteredSubject,
+			enteredMessage,
+		};
+
+		const response = await fetch("/api/contact", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(payload),
+		});
+
+		const result = await response.json();
+
+		console.log(result);
 	};
 
 	return (
