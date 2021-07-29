@@ -1,15 +1,15 @@
 import Card from "../../components/UI/Card";
-import ContactTitle from "../../components/Contact/ContactTitle";
-import Form from "../../components/Contact/Form";
-import SocialMediaLinks from "../../components/UI/SocialMediaLinks";
+import FillingForm from "../../components/Contact/FillingForm";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
 const Contact = () => {
+	// isSendingMessage
+	// isFillingForm
+	// isFormReceived
+
 	return (
 		<Card className={contactClasses.container}>
-			<ContactTitle />
-			<Form />
-			<SocialMediaLinks />
+			<FillingForm />
 		</Card>
 	);
 };
