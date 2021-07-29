@@ -5,7 +5,6 @@ export const FormContext = React.createContext();
 const initialState = {
 	isSendingForm: false,
 	isFillingForm: true,
-	isFormReceived: false,
 	serverResponse: null,
 };
 
@@ -20,7 +19,6 @@ const formReducer = (state, action) => {
 		case "RECEIVED":
 			return {
 				...state,
-				isFormReceived: !state.isFormReceived,
 				isSendingForm: !state.isSendingForm,
 				serverResponse: action.payload,
 			};
@@ -43,7 +41,6 @@ const FormProvider = props => {
 	const ctx = {
 		isSendingForm: formState.isSendingForm,
 		isFillingForm: formState.isFillingForm,
-		isFormReceived: formState.isFormReceived,
 		serverResponse: formState.serverResponse,
 		onFormSubmit,
 		onFormReceived,

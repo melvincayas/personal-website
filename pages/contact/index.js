@@ -8,15 +8,13 @@ import FormReceived from "../../components/Contact/FormReceived";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
 const Contact = () => {
-	const { isSendingForm, isFillingForm, isFormReceived } =
-		useContext(FormContext);
+	const { isSendingForm, isFillingForm } = useContext(FormContext);
 
 	if (isSendingForm) return <LoadingScreen />;
 
 	return (
 		<Card className={contactClasses.container}>
-			{isFillingForm && <Form />}
-			{isFormReceived && <FormReceived />}
+			{isFillingForm ? <Form /> : <FormReceived />}
 			<SocialMediaLinks />
 		</Card>
 	);
