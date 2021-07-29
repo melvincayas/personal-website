@@ -20,7 +20,7 @@ export default function messageHandler(req, res) {
 	const emailMessage = {
 		from: EMAIL,
 		to: PERSONALEMAIL,
-		subject: enteredSubject,
+		subject: `"${enteredSubject}" from ${enteredName}`,
 		text: `${enteredMessage} ${enteredName} at ${enteredEmail}`,
 		html: `<div><p>${enteredMessage}</p><p>${enteredName} at ${enteredEmail}</p></div>`,
 	};
