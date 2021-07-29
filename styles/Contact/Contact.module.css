@@ -11,6 +11,11 @@
 	font-weight: bold;
 }
 
+.response-message {
+	font-size: 1.125em;
+	margin: 1.5em 0;
+}
+
 .form {
 	display: flex;
 	flex-direction: column;
@@ -41,7 +46,7 @@
 	margin-bottom: 2.5em;
 }
 
-.send-message-button {
+.contact-button {
 	background-color: #2b95f0;
 	color: white;
 	padding: 0.65em;
@@ -50,6 +55,11 @@
 	text-align: center;
 }
 
-.send-message-button:hover {
+.contact-button:hover {
 	background-color: #2585d8;
+}
+
+.response-button {
+	width: 50%;
+	max-width: 200px;
 }
