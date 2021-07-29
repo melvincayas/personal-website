@@ -3,10 +3,10 @@ import React, { useReducer } from "react";
 export const FormContext = React.createContext();
 
 const initialState = {
-	counter: 0,
 	isSendingForm: false,
 	isFillingForm: true,
 	isFormReceived: false,
+	serverResponse: null,
 };
 
 const formReducer = (state, action) => {
@@ -22,6 +22,7 @@ const formReducer = (state, action) => {
 				...state,
 				isFormReceived: !state.isFormReceived,
 				isSendingForm: !state.isSendingForm,
+				serverResponse: action.payload,
 			};
 		default:
 			return initialState;
@@ -35,14 +36,15 @@ const FormProvider = props => {
 		dispatch({ type: "SENDING" });
 	};
 
-	const onFormReceived = () => {
-		dispatch({ type: "RECEIVED" });
+	const onFormReceived = serverResponse => {
+		dispatch({ type: "RECEIVED", payload: serverResponse });
 	};
 
 	const ctx = {
 		isSendingForm: formState.isSendingForm,
 		isFillingForm: formState.isFillingForm,
 		isFormReceived: formState.isFormReceived,
+		serverResponse: formState.serverResponse,
 		onFormSubmit,
 		onFormReceived,
 	};

@@ -1,10 +1,13 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
+import { FormContext } from "../store/FormProvider";
 import useInput from "../hooks/useInput";
 import Input from "../UI/Input";
 import ButtonLink from "../UI/ButtonLink";
+import ContactTitle from "./ContactTitle";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
-const Form = props => {
+const Form = () => {
+	const { onFormSubmit, onFormReceived } = useContext(FormContext);
 	const {
 		enteredText: enteredName,
 		onChangeHandler: nameChangeHandler,
@@ -32,7 +35,7 @@ const Form = props => {
 
 	const formSubmitHandler = async event => {
 		event.preventDefault();
-		setIsSendingMessage(true);
+		onFormSubmit();
 
 		const payload = {
 			enteredName,
@@ -51,13 +54,12 @@ const Form = props => {
 
 		const result = await response.json();
 
-		setIsSendingMessage(false);
-
-		console.log(result);
+		onFormReceived(result);
 	};
 
 	return (
 		<Fragment>
+			<ContactTitle title={"Let's make an impact together!"} />
 			<form onSubmit={formSubmitHandler} className={contactClasses.form}>
 				<Input
 					value={enteredName}
@@ -95,10 +97,7 @@ const Form = props => {
 					placeholder={isMessageError ? "Please enter a message" : "Message"}
 					className={isMessageError ? contactClasses["input-error"] : ""}
 				/>
-				<ButtonLink
-					type="button"
-					className={contactClasses["send-message-button"]}
-				>
+				<ButtonLink type="button" className={contactClasses["contact-button"]}>
 					Send Message
 				</ButtonLink>
 			</form>

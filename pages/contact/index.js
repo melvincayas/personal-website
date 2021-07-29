@@ -1,15 +1,23 @@
+import { useContext } from "react";
+import { FormContext } from "../../components/store/FormProvider";
 import Card from "../../components/UI/Card";
-import FillingForm from "../../components/Contact/FillingForm";
+import LoadingScreen from "../../components/UI/LoadingScreen";
+import Form from "../../components/Contact/Form";
+import SocialMediaLinks from "../../components/UI/SocialMediaLinks";
+import FormReceived from "../../components/Contact/FormReceived";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
 const Contact = () => {
-	// isSendingMessage
-	// isFillingForm
-	// isFormReceived
+	const { isSendingForm, isFillingForm, isFormReceived } =
+		useContext(FormContext);
+
+	if (isSendingForm) return <LoadingScreen />;
 
 	return (
 		<Card className={contactClasses.container}>
-			<FillingForm />
+			{isFillingForm && <Form />}
+			{isFormReceived && <FormReceived />}
+			<SocialMediaLinks />
 		</Card>
 	);
 };
