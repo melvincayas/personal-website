@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { Fragment } from "react";
 import useInput from "../hooks/useInput";
 import Input from "../UI/Input";
 import ButtonLink from "../UI/ButtonLink";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
-const Form = () => {
-	const [isSendingMessage, setIsSendingMessage] = useState(false);
+const Form = props => {
 	const {
 		enteredText: enteredName,
 		onChangeHandler: nameChangeHandler,
@@ -58,50 +57,52 @@ const Form = () => {
 	};
 
 	return (
-		<form onSubmit={formSubmitHandler} className={contactClasses.form}>
-			<Input
-				value={enteredName}
-				onChange={nameChangeHandler}
-				onBlur={nameBlurHandler}
-				type="text"
-				name="name"
-				placeholder={isNameError ? "Please enter a name" : "Name"}
-				className={isNameError ? contactClasses["input-error"] : ""}
-			/>
-			<Input
-				value={enteredEmail}
-				onChange={emailChangeHandler}
-				onBlur={emailBlurHandler}
-				type="email"
-				name="email"
-				placeholder={isEmailError ? "Please enter an email" : "Email"}
-				className={isEmailError ? contactClasses["input-error"] : ""}
-			/>
-			<Input
-				value={enteredSubject}
-				onChange={subjectChangeHandler}
-				onBlur={subjectBlurHandler}
-				type="text"
-				name="subject"
-				placeholder={isSubjectError ? "Please enter a subject" : "Subject"}
-				className={isSubjectError ? contactClasses["input-error"] : ""}
-			/>
-			<Input
-				value={enteredMessage}
-				onChange={messageChangeHandler}
-				onBlur={messageBlurHandler}
-				type="textarea"
-				name="message"
-				placeholder={isMessageError ? "Please enter a message" : "Message"}
-				className={isMessageError ? contactClasses["input-error"] : ""}
-			/>
-			<ButtonLink
-				type="button"
-				className={contactClasses["send-message-button"]}
-			>
-				Send Message
-			</ButtonLink>
-		</form>
+		<Fragment>
+			<form onSubmit={formSubmitHandler} className={contactClasses.form}>
+				<Input
+					value={enteredName}
+					onChange={nameChangeHandler}
+					onBlur={nameBlurHandler}
+					type="text"
+					name="name"
+					placeholder={isNameError ? "Please enter a name" : "Name"}
+					className={isNameError ? contactClasses["input-error"] : ""}
+				/>
+				<Input
+					value={enteredEmail}
+					onChange={emailChangeHandler}
+					onBlur={emailBlurHandler}
+					type="email"
+					name="email"
+					placeholder={isEmailError ? "Please enter an email" : "Email"}
+					className={isEmailError ? contactClasses["input-error"] : ""}
+				/>
+				<Input
+					value={enteredSubject}
+					onChange={subjectChangeHandler}
+					onBlur={subjectBlurHandler}
+					type="text"
+					name="subject"
+					placeholder={isSubjectError ? "Please enter a subject" : "Subject"}
+					className={isSubjectError ? contactClasses["input-error"] : ""}
+				/>
+				<Input
+					value={enteredMessage}
+					onChange={messageChangeHandler}
+					onBlur={messageBlurHandler}
+					type="textarea"
+					name="message"
+					placeholder={isMessageError ? "Please enter a message" : "Message"}
+					className={isMessageError ? contactClasses["input-error"] : ""}
+				/>
+				<ButtonLink
+					type="button"
+					className={contactClasses["send-message-button"]}
+				>
+					Send Message
+				</ButtonLink>
+			</form>
+		</Fragment>
 	);
 };
 
