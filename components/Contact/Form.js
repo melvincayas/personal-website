@@ -1,9 +1,11 @@
+import { useState } from "react";
 import useInput from "../hooks/useInput";
 import Input from "../UI/Input";
 import ButtonLink from "../UI/ButtonLink";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
 const Form = () => {
+	const [isSendingMessage, setIsSendingMessage] = useState(false);
 	const {
 		enteredText: enteredName,
 		onChangeHandler: nameChangeHandler,
@@ -31,6 +33,7 @@ const Form = () => {
 
 	const formSubmitHandler = async event => {
 		event.preventDefault();
+		setIsSendingMessage(true);
 
 		const payload = {
 			enteredName,
@@ -48,6 +51,8 @@ const Form = () => {
 		});
 
 		const result = await response.json();
+
+		setIsSendingMessage(false);
 
 		console.log(result);
 	};
