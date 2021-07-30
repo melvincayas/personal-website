@@ -5,10 +5,18 @@ import contactClasses from "../../styles/Contact/Contact.module.css";
 import ButtonLink from "../UI/ButtonLink";
 
 const FormReceived = () => {
-	const { serverResponse } = useContext(FormContext);
+	const { serverResponse, onFormReturn } = useContext(FormContext);
 
 	const contactTitle =
 		serverResponse.type === "success" ? "Thank you!" : "Whoops!";
+
+	const buttonText =
+		serverResponse.type === "success" ? "Home" : "Back to Form";
+
+	const failButtonClickHandler = event => {
+		event.preventDefault();
+		onFormReturn();
+	};
 
 	return (
 		<Fragment>
@@ -17,10 +25,14 @@ const FormReceived = () => {
 				{serverResponse.message}
 			</p>
 			<ButtonLink
-				href="/"
+				href={serverResponse.type === "success" ? "/" : ""}
+				type={serverResponse.type === "success" ? "" : "button"}
+				onClick={
+					serverResponse.type === "success" ? "" : failButtonClickHandler
+				}
 				className={`${contactClasses["contact-button"]} ${contactClasses["response-button"]}`}
 			>
-				Home
+				{buttonText}
 			</ButtonLink>
 		</Fragment>
 	);

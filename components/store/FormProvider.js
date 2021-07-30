@@ -38,12 +38,17 @@ const FormProvider = props => {
 		dispatch({ type: "RECEIVED", payload: serverResponse });
 	};
 
+	const onFormReturn = () => {
+		dispatch({ type: "RESET" });
+	};
+
 	const ctx = {
 		isSendingForm: formState.isSendingForm,
 		isFillingForm: formState.isFillingForm,
 		serverResponse: formState.serverResponse,
 		onFormSubmit,
 		onFormReceived,
+		onFormReturn,
 	};
 
 	return (

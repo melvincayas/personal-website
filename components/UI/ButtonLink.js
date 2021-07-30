@@ -4,7 +4,10 @@ import Link from "next/link";
 const ButtonLink = props => {
 	if (props.type === "button") {
 		return (
-			<button className={`${props.className} ${linkClasses.link}`}>
+			<button
+				onClick={props.onClick}
+				className={`${props.className} ${linkClasses.link}`}
+			>
 				{props.children}
 			</button>
 		);
