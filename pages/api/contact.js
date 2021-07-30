@@ -1,7 +1,8 @@
-export default async function messageHandler(req, res) {
+import checkFormValidation from "../../middleware/checkFormValidation";
+
+const handler = async (req, res) => {
 	try {
 		require("dotenv").config();
-		const SECRET_KEY = process.env.secretKey;
 		const EMAIL = process.env.email;
 		const PASSWORD = process.env.password;
 		const PERSONAL_EMAIL = process.env.personalEmail;
@@ -16,41 +17,8 @@ export default async function messageHandler(req, res) {
 			secure: true,
 		});
 
-		if (req.method !== "POST") {
-			return res.status(400).json({
-				type: "fail",
-				message: "Please send your message as a POST request.",
-			});
-		}
-
-		const {
-			enteredName,
-			enteredEmail,
-			enteredSubject,
-			enteredMessage,
-			formToken,
-		} = req.body;
-
-		const response = await fetch(
-			"https://www.google.com/recaptcha/api/siteverify",
-			{
-				method: "POST",
-				headers: {
-					"Content-Type": "application/x-www-form-urlencoded",
-				},
-				body: `secret=${SECRET_KEY}&response=${formToken}`,
-			}
-		);
-
-		const result = await response.json();
-
-		if (!result.success) {
-			return res.status(403).json({
-				type: "fail",
-				message:
-					"Something went wrong with the form verification! Please try again.",
-			});
-		}
+		const { enteredName, enteredEmail, enteredSubject, enteredMessage } =
+			req.body;
 
 		const emailMessage = {
 			from: EMAIL,
@@ -80,4 +48,6 @@ export default async function messageHandler(req, res) {
 			message: "Something went wrong with the server! Please try again.",
 		});
 	}
-}
+};
+
+export default checkFormValidation(handler);
