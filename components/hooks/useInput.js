@@ -20,6 +20,7 @@ const useInput = () => {
 		onChangeHandler,
 		onBlurHandler,
 		isError,
+		isEmpty,
 	};
 };
 

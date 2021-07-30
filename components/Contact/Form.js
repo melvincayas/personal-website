@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import { Fragment, useState, useContext } from "react";
 import { FormContext } from "../store/FormProvider";
 import useInput from "../hooks/useInput";
 import Input from "../UI/Input";
@@ -7,34 +7,45 @@ import ContactTitle from "./ContactTitle";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
 const Form = () => {
+	const [isTriedToSubmit, setIsTriedToSubmit] = useState(false);
 	const { onFormSubmit, onFormReceived } = useContext(FormContext);
 	const {
 		enteredText: enteredName,
 		onChangeHandler: nameChangeHandler,
 		onBlurHandler: nameBlurHandler,
 		isError: isNameError,
+		isEmpty: isNameEmpty,
 	} = useInput();
 	const {
 		enteredText: enteredEmail,
 		onChangeHandler: emailChangeHandler,
 		onBlurHandler: emailBlurHandler,
 		isError: isEmailError,
+		isEmpty: isEmailEmpty,
 	} = useInput();
 	const {
 		enteredText: enteredSubject,
 		onChangeHandler: subjectChangeHandler,
 		onBlurHandler: subjectBlurHandler,
 		isError: isSubjectError,
+		isEmpty: isSubjectEmpty,
 	} = useInput();
 	const {
 		enteredText: enteredMessage,
 		onChangeHandler: messageChangeHandler,
 		onBlurHandler: messageBlurHandler,
 		isError: isMessageError,
+		isEmpty: isMessageEmpty,
 	} = useInput();
 
 	const formSubmitHandler = async event => {
 		event.preventDefault();
+
+		if (isNameEmpty || isEmailEmpty || isSubjectEmpty || isMessageEmpty) {
+			setIsTriedToSubmit(true);
+			return;
+		}
+
 		onFormSubmit();
 
 		const payload = {
@@ -98,7 +109,7 @@ const Form = () => {
 					className={isMessageError ? contactClasses["input-error"] : ""}
 				/>
 				<ButtonLink type="button" className={contactClasses["contact-button"]}>
-					Send Message
+					{isTriedToSubmit ? "Please fill everything out" : "Send Message"}
 				</ButtonLink>
 			</form>
 		</Fragment>
