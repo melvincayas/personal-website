@@ -5,12 +5,6 @@ const SocialMediaLinks = () => {
 	return (
 		<aside className={socialMediaClasses.container}>
 			<SocialMediaIcon
-				type="sameTab"
-				href="mailto:cayasmj@gmail.com?Subject=Hi,%20Melvin!"
-			>
-				<i className={`far fa-envelope ${socialMediaClasses.icon}`}></i>
-			</SocialMediaIcon>
-			<SocialMediaIcon
 				className={socialMediaClasses["github-link"]}
 				href="https://github.com/melvincayas"
 			>
