@@ -1,4 +1,4 @@
-const checkFormValidation = () => {
+const checkUserValidation = () => {
 	return async (req, res, next) => {
 		try {
 			require("dotenv").config();
@@ -36,4 +36,4 @@ const checkFormValidation = () => {
 	};
 };
 
-export default checkFormValidation;
+export default checkUserValidation;
