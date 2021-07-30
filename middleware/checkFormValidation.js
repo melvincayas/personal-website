@@ -1,16 +1,9 @@
-const checkFormValidation = handler => {
-	return async (req, res) => {
+const checkFormValidation = () => {
+	return async (req, res, next) => {
 		try {
 			require("dotenv").config();
 			const SECRET_KEY = process.env.secretKey;
 			const { formToken } = req.body;
-
-			if (req.method !== "POST") {
-				return res.status(400).json({
-					type: "fail",
-					message: "Please send your message as a POST request.",
-				});
-			}
 
 			const response = await fetch(
 				"https://www.google.com/recaptcha/api/siteverify",
@@ -33,7 +26,7 @@ const checkFormValidation = handler => {
 				});
 			}
 
-			return handler(req, res);
+			next();
 		} catch (err) {
 			res.status(500).json({
 				type: "fail",
