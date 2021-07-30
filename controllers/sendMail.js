@@ -38,7 +38,7 @@ const sendMail = async (req, res) => {
 		res.status(200).json({
 			type: "success",
 			message:
-				"Your message has been sent! Please give me time to get back to you.",
+				"Your message has been sent! I'll get back to you as soon as I can.",
 		});
 	} catch (err) {
 		res.status(500).json({
