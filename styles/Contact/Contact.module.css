@@ -2,7 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 665px;
+	max-width: 665px;
+	width: 90%;
 	padding: 2em 0;
 }
 
@@ -68,4 +69,34 @@
 .response-button {
 	width: 50%;
 	max-width: 200px;
+}
+
+@media screen and (max-width: 1216px) {
+	.title {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: 1.75em;
+	}
+
+	.form {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.title {
+		font-size: 1.1em;
+	}
+
+	.form {
+		width: 90%;
+	}
+
+	.input {
+		font-size: 1em;
+	}
 }
