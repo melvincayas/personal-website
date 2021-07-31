@@ -44,3 +44,22 @@
 .post-description {
 	font-size: 1.1em;
 }
+
+.all-posts-link-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 80%;
+}
+
+.all-posts-link {
+	color: black;
+	font-weight: bold;
+	font-size: 1.125em;
+	margin-right: 1.5em;
+}
+
+.all-posts-link:hover {
+	color: #2b95f0;
+	filter: drop-shadow(2px 2px 4px #ccc);
+}

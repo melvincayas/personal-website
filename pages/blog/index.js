@@ -22,6 +22,11 @@ const Blog = ({ hashnodePosts }) => {
 					<PostCard key={post._id} post={post} />
 				))}
 			</section>
+			<aside className={blogClasses["all-posts-link-container"]}>
+				<a className={blogClasses["all-posts-link"]} href={process.env.domain}>
+					See all posts
+				</a>
+			</aside>
 		</Fragment>
 	);
 };
