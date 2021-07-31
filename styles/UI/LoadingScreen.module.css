@@ -1,6 +1,8 @@
 .container {
 	position: absolute;
-	top: 25%;
+	top: calc(50% - 52px - 32px);
 	left: 50%;
-	transform: translate(0, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
