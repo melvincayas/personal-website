@@ -14,7 +14,7 @@ const Blog = ({ hashnodePosts }) => {
 					target="_blank"
 					rel="noreferrer noopener"
 				>
-					<Image src={blogLogo} alt="Melvin Learns Code" />
+					<Image src={blogLogo} alt="Melvin's Blog Logo" />
 				</a>
 			</figure>
 			<section className={blogClasses["post-container"]}>
