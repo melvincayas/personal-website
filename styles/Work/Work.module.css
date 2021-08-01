@@ -1,0 +1,54 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1300px;
+}
+
+.column {
+	padding: 0.75em 2em;
+	width: calc((100%) / 3);
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1em;
+	height: 100%;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0.75em 0;
+}
+
+.title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.project-button {
+	padding: 0.35em;
+	width: 40%;
+	text-align: center;
+}
+
+.live-button {
+	background-color: #2b95f0;
+	color: white;
+}
+
+.github-button {
+	background-color: #2d333b;
+	color: white;
+}
+
+.tag::after {
+	content: ", ";
+}
+
+.tag:last-of-type::after {
+	content: "";
+}

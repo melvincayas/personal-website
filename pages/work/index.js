@@ -1,15 +1,15 @@
-import ProjectCard from "../../components/Projects/ProjectCard";
-import { projects } from "../../public/data/projects-set";
-import classes from "../../styles/Projects/Projects.module.css";
+import ProjectCard from "../../components/Work/ProjectCard";
+import { projects } from "../../public/data/work-data";
+import workClasses from "../../styles/Work/Work.module.css";
 
-const Projects = () => {
+const Work = () => {
 	return (
-		<div className={`columns is-multiline ${classes.projects}`}>
+		<section className={workClasses.container}>
 			{projects.map(project => (
 				<ProjectCard key={project.id} project={project} />
 			))}
-		</div>
+		</section>
 	);
 };
 
-export default Projects;
+export default Work;
