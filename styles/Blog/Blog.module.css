@@ -77,6 +77,7 @@
 	flex-direction: row;
 	justify-content: flex-end;
 	width: 80%;
+	margin-bottom: 2em;
 }
 
 .all-posts-link {
