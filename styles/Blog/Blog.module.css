@@ -19,7 +19,7 @@
 
 .post-card {
 	width: 75%;
-	padding: 1.5em;
+	padding: 1.25em;
 	border-radius: 10px;
 	background-color: white;
 	margin-bottom: 2em;
@@ -84,7 +84,7 @@
 	color: black;
 	font-weight: bold;
 	font-size: 1.125em;
-	margin-right: 1.5em;
+	margin-right: 1.75em;
 }
 
 .all-posts-link:hover {
@@ -116,6 +116,14 @@
 	.post-card {
 		width: 85%;
 	}
+
+	.all-posts-link-container {
+		width: 85%;
+	}
+
+	.all-posts-link {
+		margin-right: 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -130,6 +138,10 @@
 
 	.post-title {
 		font-size: 1.5em;
+	}
+
+	.all-posts-link-container {
+		width: 95%;
 	}
 
 	.post-description {
