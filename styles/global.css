@@ -6,16 +6,6 @@ body {
 	padding-top: 3.25em;
 }
 
-nav {
-	background-color: whitesmoke !important;
-}
-
-.App {
-	display: flex;
-	flex-direction: column;
-	min-height: 86vh;
-}
-
 @media screen and (max-width: 350px) {
 	body {
 		font-size: 0.75em;

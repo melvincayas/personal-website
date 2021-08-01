@@ -1,10 +1,10 @@
-import classes from "../../styles/UI/Footer.module.css";
+import footerClasses from "../../styles/UI/Footer.module.css";
 
 const Footer = () => {
 	return (
-		<footer class={`footer ${classes.footer}`}>
-			<div class="content">
-				<p className="my-0">cayasmj@gmail.com</p>
+		<footer class={footerClasses.footer}>
+			<div className={footerClasses["footer-text-container"]}>
+				<p className={footerClasses["footer-text"]}>cayasmj@gmail.com</p>
 			</div>
 		</footer>
 	);

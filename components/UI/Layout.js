@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import Navbar from "../Navbar/Navbar";
-import Footer from "../UI/Footer";
 import layoutClasses from "../../styles/UI/Layout.module.css";
 
 const Layout = props => {
@@ -10,7 +9,6 @@ const Layout = props => {
 			<main className={`container ${layoutClasses.main}`}>
 				{props.children}
 			</main>
-			{/* <Footer /> */}
 		</Fragment>
 	);
 };
