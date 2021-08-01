@@ -1,4 +1,5 @@
 import { useState } from "react";
+import MobileMenu from "./MobileMenu";
 import navbarClasses from "../../styles/UI/Navbar.module.css";
 
 const Burger = () => {
@@ -7,6 +8,8 @@ const Burger = () => {
 	const menuToggleHandler = () => {
 		setIsMobileMenuOpen(prevState => !prevState);
 	};
+
+	if (isMobileMenuOpen) return <MobileMenu onClose={menuToggleHandler} />;
 
 	return (
 		<button
