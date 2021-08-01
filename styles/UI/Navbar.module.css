@@ -1,6 +1,33 @@
-.name {
+.navbar {
 	font-size: 1.125em;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-content-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1300px;
+	padding: 0.75em 0;
+}
+
+.navbar-name {
+	padding-left: 0.75em;
 	color: black;
+}
+
+.links-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.link {
+	padding: 0 0.75em;
 }
 
 .active {
