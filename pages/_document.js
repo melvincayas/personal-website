@@ -27,7 +27,7 @@ class MyDocument extends Document {
 					<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 					<script defer src="scripts/navbar.js"></script>
 				</Head>
-				<body className="has-navbar-fixed-top">
+				<body>
 					<Main />
 					<NextScript />
 				</body>
