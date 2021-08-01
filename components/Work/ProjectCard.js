@@ -4,7 +4,7 @@ import workClasses from "../../styles/Work/Work.module.css";
 
 const ProjectCard = ({ project }) => {
 	return (
-		<div className={workClasses.column}>
+		<article className={workClasses.column}>
 			<Card className={workClasses["project-card"]}>
 				<h1 className={workClasses.title}>{project.title}</h1>
 				<p className={workClasses.description}>{project.content}</p>
@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
 				</div>
 				<ButtonContainer project={project} />
 			</Card>
-		</div>
+		</article>
 	);
 };
 

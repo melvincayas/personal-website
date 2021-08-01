@@ -20,10 +20,6 @@
 .post-card {
 	width: 75%;
 	padding: 1.25em;
-	border-radius: 10px;
-	background-color: white;
-	margin-bottom: 2em;
-	filter: drop-shadow(4px 4px 8px #ccc);
 	transition: all 0.2s ease-in-out;
 }
 
