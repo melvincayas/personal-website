@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import navbarClasses from "../../styles/UI/Navbar.module.css";
+import navbarClasses from "../../styles/Navbar/Navbar.module.css";
 
 const NavbarLink = props => {
 	const { pathname } = useRouter();

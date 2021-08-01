@@ -1,7 +1,7 @@
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import LinkContainer from "./LinkContainer";
 import Burger from "./Burger";
-import navbarClasses from "../../styles/UI/Navbar.module.css";
+import navbarClasses from "../../styles/Navbar/Navbar.module.css";
 
 const Navbar = () => {
 	const windowDimensions = useWindowDimensions();

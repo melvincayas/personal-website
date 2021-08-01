@@ -1,5 +1,5 @@
 import LinkContainer from "./LinkContainer";
-import navbarClasses from "../../styles/UI/Navbar.module.css";
+import navbarClasses from "../../styles/Navbar/Navbar.module.css";
 
 const MobileMenu = props => {
 	return (

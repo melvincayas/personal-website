@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
-import navbarClasses from "../../styles/UI/Navbar.module.css";
+import navbarClasses from "../../styles/Navbar/Navbar.module.css";
 
 const Burger = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -1,6 +1,5 @@
-import { Fragment } from "react";
 import NavbarLink from "./NavbarLink";
-import navbarClasses from "../../styles/UI/Navbar.module.css";
+import navbarClasses from "../../styles/Navbar/Navbar.module.css";
 
 const LinkContainer = props => {
 	return (
