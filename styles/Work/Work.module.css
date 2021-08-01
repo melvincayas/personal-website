@@ -6,7 +6,7 @@
 }
 
 .column {
-	padding: 0.75em 2em;
+	padding: 2em;
 	width: calc((100%) / 3);
 }
 
