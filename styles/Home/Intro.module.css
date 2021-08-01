@@ -1,5 +1,5 @@
 .section-container {
-	margin: 2em auto 6em;
+	margin: 1.75em auto 6em;
 }
 
 .text-container {
@@ -23,4 +23,22 @@
 
 .landing-page-button:hover {
 	background-color: #2585d8;
+}
+
+@media screen and (max-width: 768px) {
+	.section-container {
+		margin-top: 1.25em;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.section-container {
+		margin-top: 0.5em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.section-container {
+		margin-top: 0em;
+	}
 }
