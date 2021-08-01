@@ -1,5 +1,5 @@
 import useWindowDimensions from "../hooks/useWindowDimensions";
-import DesktopLinks from "./DesktopLinks";
+import LinkContainer from "./LinkContainer";
 import Burger from "./Burger";
 import navbarClasses from "../../styles/UI/Navbar.module.css";
 
@@ -7,7 +7,7 @@ const Navbar = () => {
 	const windowDimensions = useWindowDimensions();
 
 	const navbarLinks =
-		windowDimensions.width < 1024 ? <Burger /> : <DesktopLinks />;
+		windowDimensions.width < 1024 ? <Burger /> : <LinkContainer />;
 
 	return (
 		<nav className={navbarClasses.navbar}>

@@ -1,4 +1,4 @@
-import DesktopLinks from "./DesktopLinks";
+import LinkContainer from "./LinkContainer";
 import navbarClasses from "../../styles/UI/Navbar.module.css";
 
 const MobileMenu = props => {
@@ -10,7 +10,7 @@ const MobileMenu = props => {
 			>
 				<i class={`fas fa-times ${navbarClasses["mobile-close-icon"]}`}></i>
 			</button>
-			<DesktopLinks />
+			<LinkContainer onClose={props.onClose} />
 		</div>
 	);
 };

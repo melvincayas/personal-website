@@ -11,6 +11,7 @@ const NavbarLink = props => {
 		<li className={navbarClasses.link}>
 			<Link href={props.href}>
 				<a
+					onClick={props.onClose}
 					target={props.title === "Resume" ? "_blank" : ""}
 					rel={props.title === "Resume" ? "noreferrer noopener" : ""}
 					className={`${isActive}`}
