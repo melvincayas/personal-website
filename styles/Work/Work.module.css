@@ -16,6 +16,12 @@
 	justify-content: space-evenly;
 	padding: 1em;
 	height: 100%;
+	transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+	transform: scale(1.01);
+	filter: drop-shadow(6px 6px 10px #888);
 }
 
 .button-container {
@@ -25,7 +31,22 @@
 }
 
 .title {
-	font-size: 1.5em;
+	font-size: 1.625em;
+	font-weight: bold;
+}
+
+.description,
+.tech-stack {
+	font-size: 1.125em;
+}
+
+.title,
+.description,
+.tech-stack {
+	margin-bottom: 0.75em;
+}
+
+.subtitle {
 	font-weight: bold;
 }
 
@@ -40,9 +61,17 @@
 	color: white;
 }
 
+.live-button:hover {
+	background-color: #2585d8;
+}
+
 .github-button {
 	background-color: #2d333b;
 	color: white;
+}
+
+.github-button:hover {
+	background-color: #000;
 }
 
 .tag::after {

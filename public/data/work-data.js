@@ -3,7 +3,7 @@ export const projects = [
 		id: 1,
 		title: "Math Whizard",
 		content:
-			"Math game allowing users to customize the difficulty and the operators used.",
+			"Math game allowing users to customize the difficulty and the operators used. Two game modes are available: infinite questions or a 60 second time attack.",
 		live: "https://www.mathwhizard.com",
 		github: "https://github.com/melvincayas/math-whizard",
 		tags: ["HTML", "CSS", "JavaScript"],
@@ -12,7 +12,7 @@ export const projects = [
 		id: 2,
 		title: "Poster",
 		content:
-			"Social media website with user authentication and liking, saving and commenting on posts.",
+			"Social media website with user authentication and liking, saving and commenting on posts. Users can follow others to curate their timeline.",
 		live: "https://my-poster-app.herokuapp.com/",
 		github: "https://github.com/melvincayas/Poster-App",
 		tags: ["HTML", "CSS", "JavaScript", "EJS", "Node.js", "MongoDB"],

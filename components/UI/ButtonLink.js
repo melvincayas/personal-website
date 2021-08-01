@@ -15,7 +15,11 @@ const ButtonLink = props => {
 
 	return (
 		<Link href={props.href} passHref>
-			<a className={`${props.className} ${linkClasses.link}`}>
+			<a
+				target={props.target}
+				rel={props.rel}
+				className={`${props.className} ${linkClasses.link}`}
+			>
 				{props.children}
 			</a>
 		</Link>

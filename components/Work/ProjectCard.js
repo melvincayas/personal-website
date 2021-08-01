@@ -7,15 +7,18 @@ const ProjectCard = ({ project }) => {
 		<div className={workClasses.column}>
 			<Card className={workClasses["project-card"]}>
 				<h1 className={workClasses.title}>{project.title}</h1>
-				<p>{project.content}</p>
-				<ButtonContainer project={project} />
-				<div>
-					{project.tags.map((tag, index) => (
-						<span key={index} className={workClasses.tag}>
-							{tag}
-						</span>
-					))}
+				<p className={workClasses.description}>{project.content}</p>
+				<div className={workClasses["tech-stack"]}>
+					<p className={workClasses.subtitle}>Technologies Used</p>
+					<p>
+						{project.tags.map((tag, index) => (
+							<span key={index} className={workClasses.tag}>
+								{tag}
+							</span>
+						))}
+					</p>
 				</div>
+				<ButtonContainer project={project} />
 			</Card>
 		</div>
 	);
