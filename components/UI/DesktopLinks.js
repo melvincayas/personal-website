@@ -1,9 +1,10 @@
 import { Fragment } from "react";
 import NavbarLink from "./NavbarLink";
+import navbarClasses from "../../styles/UI/Navbar.module.css";
 
 const DesktopLinks = () => {
 	return (
-		<Fragment>
+		<ul className={navbarClasses["links-container"]}>
 			<NavbarLink href="/" title="Home" />
 			<NavbarLink href="/work" title="Work" />
 			<NavbarLink
@@ -12,7 +13,7 @@ const DesktopLinks = () => {
 			/>
 			<NavbarLink href="/blog" title="Blog" />
 			<NavbarLink href="/contact" title="Contact" />
-		</Fragment>
+		</ul>
 	);
 };
 
