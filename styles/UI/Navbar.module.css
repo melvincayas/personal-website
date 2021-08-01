@@ -30,18 +30,17 @@
 	padding: 0 0.75em;
 }
 
+.link a {
+	color: black;
+	transition: all 0.1s ease-in-out;
+}
+
+.link a:hover {
+	color: #2b95f0;
+}
+
 .active {
 	color: #2b95f0 !important;
 	border: none !important;
 	font-weight: bold;
-}
-
-.nav-links {
-	font-size: 1.125em;
-	color: black;
-	transition: all 0.1s ease;
-}
-
-.nav-links:hover {
-	color: #2b95f0;
 }
