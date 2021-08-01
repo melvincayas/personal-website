@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
 import Image from "next/image";
+import Card from "../UI/Card";
 import blogClasses from "../../styles/Blog/Blog.module.css";
 
 const LinkWrapper = props => {
@@ -20,7 +21,7 @@ const PostCard = ({ post }) => {
 	const url = `${process.env.domain}/${post.slug}`;
 
 	return (
-		<article className={blogClasses["post-card"]}>
+		<Card className={blogClasses["post-card"]}>
 			<LinkWrapper url={url}>
 				<div className={blogClasses["post-column"]}>
 					<p className={blogClasses["post-title"]}>{post.title}</p>
@@ -40,7 +41,7 @@ const PostCard = ({ post }) => {
 					/>
 				</div>
 			</LinkWrapper>
-		</article>
+		</Card>
 	);
 };
 
