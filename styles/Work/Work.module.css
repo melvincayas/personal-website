@@ -3,6 +3,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	max-width: 1300px;
+	margin-bottom: 2em;
 }
 
 .column {
