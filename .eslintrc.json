@@ -1,6 +1,14 @@
 {
-	"extends": ["react-app", "react-app/jest"],
-	"env": {
-		"jest/globals": true
-	}
+	"extends": ["react-app", "shared-config"],
+	"rules": {
+		"additional-rule": "warn"
+	},
+	"overrides": [
+		{
+			"files": ["**/*.ts?(x)"],
+			"rules": {
+				"additional-typescript-only-rule": "warn"
+			}
+		}
+	]
 }
