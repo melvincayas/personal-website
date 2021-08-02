@@ -64,39 +64,6 @@
 	justify-content: center;
 }
 
-.mobile-menu-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 100vh;
-	background-color: rgba(0, 0, 0, 0.9);
-	z-index: 100;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.mobile-close-container {
-	position: absolute;
-	top: 0;
-	right: 0;
-	border: none;
-	background-color: transparent;
-	font-size: 1.5em;
-	margin-right: 0.5em;
-	margin-top: 0.4em;
-}
-
-.mobile-close-icon {
-	cursor: pointer;
-	color: white;
-}
-
-.mobile-close-icon:hover {
-	color: #2b95f0;
-}
-
 @media screen and (max-width: 1023px) {
 	.links-container {
 		flex-direction: column;
