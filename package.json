@@ -2,9 +2,6 @@
 	"name": "personal-website",
 	"version": "0.1.0",
 	"private": true,
-	"jest": {
-		"verbose": true
-	},
 	"dependencies": {
 		"dotenv": "^10.0.0",
 		"eslint-config-react-app": "^6.0.0",
