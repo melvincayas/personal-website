@@ -80,3 +80,23 @@
 .tag:last-of-type::after {
 	content: "";
 }
+
+@media screen and (max-width: 1215px) {
+	.column {
+		width: 50%;
+		padding: 1.5em;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.column {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 1em;
+	}
+
+	.project-card {
+		width: 95%;
+	}
+}

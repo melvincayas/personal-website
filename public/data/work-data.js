@@ -25,20 +25,4 @@ export const projects = [
 		github: "https://github.com/melvincayas/surely-noted",
 		tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "React", "Redux"],
 	},
-	{
-		id: 3,
-		title: "Surely Noted",
-		content:
-			"Currently on-going project with user authentication for creating, sharing, and leaving notes on To-Do lists.",
-		github: "https://github.com/melvincayas/surely-noted",
-		tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "React", "Redux"],
-	},
-	{
-		id: 3,
-		title: "Surely Noted",
-		content:
-			"Currently on-going project with user authentication for creating, sharing, and leaving notes on To-Do lists.",
-		github: "https://github.com/melvincayas/surely-noted",
-		tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "React", "Redux"],
-	},
 ];
