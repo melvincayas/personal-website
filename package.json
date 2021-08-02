@@ -5,6 +5,7 @@
 	"dependencies": {
 		"dotenv": "^10.0.0",
 		"eslint-config-react-app": "^6.0.0",
+		"eslint-plugin-jest": "^24.4.0",
 		"moment": "^2.29.1",
 		"next": "^11.0.1",
 		"next-connect": "^0.10.1",
