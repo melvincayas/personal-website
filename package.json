@@ -4,6 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"dotenv": "^10.0.0",
+		"eslint-config-airbnb": "^18.2.1",
 		"eslint-config-react-app": "^6.0.0",
 		"moment": "^2.29.1",
 		"next": "^11.0.1",

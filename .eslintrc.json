@@ -1,5 +1,5 @@
 {
-	"extends": ["react-app", "shared-config"],
+	"extends": ["react-app", "airbnb"],
 	"rules": {
 		"additional-rule": "warn"
 	},
