@@ -19,11 +19,6 @@
 	transition: all 0.2s ease-in-out;
 }
 
-.project-card:hover {
-	transform: scale(1.01);
-	filter: drop-shadow(6px 6px 10px #888);
-}
-
 .button-container {
 	display: flex;
 	justify-content: space-evenly;
@@ -85,6 +80,13 @@
 	.column {
 		width: 50%;
 		padding: 1.5em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.project-card:hover {
+		transform: scale(1.01);
+		filter: drop-shadow(6px 6px 10px #888);
 	}
 }
 

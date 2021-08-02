@@ -27,11 +27,6 @@
 	color: black;
 }
 
-.post-card:hover {
-	transform: scale(1.01);
-	filter: drop-shadow(6px 6px 10px #888);
-}
-
 .link-wrapper {
 	display: flex;
 	flex-direction: row;
@@ -119,6 +114,13 @@
 
 	.all-posts-link {
 		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.post-card:hover {
+		transform: scale(1.01);
+		filter: drop-shadow(6px 6px 10px #888);
 	}
 }
 
