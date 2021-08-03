@@ -19,9 +19,10 @@
 
 .mobile-close-button {
 	border: none;
+	padding: 0;
 	background-color: transparent;
 	font-size: 1.35em;
-	margin-right: 0.5em;
+	margin-right: 0.75em;
 }
 
 .mobile-close-icon {
