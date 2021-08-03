@@ -33,6 +33,20 @@ class MyDocument extends Document {
 					<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2b95f0" />
 					<meta name="msapplication-TileColor" content="#2b95f0" />
 					<meta name="theme-color" content="#2b95f0" />
+					<meta name="twitter:card" content="summary" />
+					<meta name="twitter:site" content="@melvincayas" />
+					<meta
+						name="twitter:title"
+						content="Melvin Cayas - Full Stack Web Developer"
+					/>
+					<meta
+						name="twitter:description"
+						content="Let's make an impact together!"
+					/>
+					<meta
+						name="twitter:image"
+						content="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+					/>
 					<link
 						rel="stylesheet"
 						href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
