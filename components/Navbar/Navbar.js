@@ -1,5 +1,6 @@
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import LinkContainer from "./LinkContainer";
+import Link from "next/link";
 import Burger from "./Burger";
 import navbarClasses from "../../styles/Navbar/Navbar.module.css";
 
@@ -13,9 +14,9 @@ const Navbar = () => {
 		<nav className={navbarClasses.navbar}>
 			<div className={navbarClasses["navbar-content-container"]}>
 				<div>
-					<a href="/">
-						<span className={navbarClasses["navbar-name"]}>Melvin Cayas</span>
-					</a>
+					<Link href="/" passHref>
+						<a className={navbarClasses["navbar-name"]}>Melvin Cayas</a>
+					</Link>
 				</div>
 				{navbarLinks}
 			</div>
