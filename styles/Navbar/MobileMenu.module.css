@@ -30,6 +30,8 @@
 	color: white;
 }
 
-.mobile-close-icon:hover {
-	color: #2b95f0;
+@media screen and (min-width: 576px) {
+	.mobile-close-icon:hover {
+		color: #2b95f0;
+	}
 }
