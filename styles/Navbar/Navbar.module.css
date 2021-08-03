@@ -70,8 +70,8 @@
 	}
 
 	.link {
-		text-align: center;
-		margin: 1.5em;
+		text-align: right;
+		margin: 1.5em 0.25em;
 	}
 
 	.link a {

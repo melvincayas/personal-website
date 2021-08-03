@@ -4,12 +4,14 @@ import mobileClasses from "../../styles/Navbar/MobileMenu.module.css";
 const MobileMenu = props => {
 	return (
 		<div className={mobileClasses["mobile-menu-container"]}>
-			<button
-				onClick={props.onClose}
-				className={mobileClasses["mobile-close-container"]}
-			>
-				<i class={`fas fa-times ${mobileClasses["mobile-close-icon"]}`}></i>
-			</button>
+			<div className={mobileClasses["mobile-button-container"]}>
+				<button
+					onClick={props.onClose}
+					className={mobileClasses["mobile-close-button"]}
+				>
+					<i class={`fas fa-times ${mobileClasses["mobile-close-icon"]}`}></i>
+				</button>
+			</div>
 			<LinkContainer onClose={props.onClose} />
 		</div>
 	);
