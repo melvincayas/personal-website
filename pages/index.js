@@ -1,5 +1,4 @@
-import { Fragment } from "react";
-import Head from "next/head";
+import NextHead from "../components/UI/NextHead";
 import ProfilePic from "../components/Home/ProfilePic";
 import Intro from "../components/Home/Intro";
 import SocialMediaLinks from "../components/UI/SocialMediaLinks";
@@ -7,21 +6,18 @@ import homePageClasses from "../styles/Home/HomePage.module.css";
 
 const HomePage = () => {
 	return (
-		<Fragment>
-			<Head>
-				<meta
-					name="twitter:title"
-					content="Melvin Cayas | Full Stack Web Developer"
-				/>
-				<meta property="og:url" content="https://www.melvincayas.com" />
-				<title>Home | Melvin Cayas</title>
-			</Head>
+		<NextHead
+			twitterTitle="Melvin Cayas | Full Stack Web Developer"
+			metaUrl="https://www.melvincayas.com"
+			description="Melvin believes in learning-by-doing and loves creating value through problem-solving. His goal is to impact the world with the code he types."
+			title="Melvin Cayas | Home"
+		>
 			<div className={homePageClasses.container}>
 				<ProfilePic />
 				<Intro />
 				<SocialMediaLinks />
 			</div>
-		</Fragment>
+		</NextHead>
 	);
 };
 

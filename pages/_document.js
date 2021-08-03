@@ -10,7 +10,7 @@ class MyDocument extends Document {
 					<meta name="author" content="Melvin Cayas" />
 					<meta
 						name="description"
-						content="Melvin Cayas is a full stack web developer who believes in learning-by-doing and loves creating value through problem-solving. His goal is to impact the world with the code I type."
+						content="Melvin is a full stack web developer who believes in learning-by-doing and loves creating value through problem-solving. His goal is to impact the world with the code he types!"
 					/>
 					<link
 						rel="apple-touch-icon"
@@ -36,10 +36,6 @@ class MyDocument extends Document {
 					<meta name="twitter:card" content="summary" />
 					<meta name="twitter:site" content="@melvincayas" />
 					<meta
-						name="twitter:description"
-						content="Let's make an impact together!"
-					/>
-					<meta
 						name="twitter:image"
 						content="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
 					/>
@@ -53,13 +49,8 @@ class MyDocument extends Document {
 						integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
 						crossorigin="anonymous"
 					/>
-					<meta property="og:url" content="https://www.melvincayas.com" />
 					<meta property="og:type" content="website" />
 					<meta property="og:site_name" content="Melvin Cayas" />
-					<meta
-						property="og:description"
-						content="Let's make an impact together!"
-					/>
 					<meta
 						property="og:image"
 						content="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"

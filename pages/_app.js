@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import FormProvider from "../components/store/FormProvider";
 import Layout from "../components/UI/Layout";
@@ -27,6 +28,9 @@ const MyApp = ({ Component, pageProps }) => {
 
 	return (
 		<Fragment>
+			<Head>
+				<title>Melvin Cayas</title>
+			</Head>
 			<FormProvider>
 				<Layout>
 					{isPageLoading ? <LoadingScreen /> : <Component {...pageProps} />}
