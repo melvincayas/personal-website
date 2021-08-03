@@ -57,6 +57,21 @@ class MyDocument extends Document {
 						integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
 						crossorigin="anonymous"
 					/>
+					<meta property="og:url" content="https://www.melvincayas.com" />
+					<meta property="og:type" content="website" />
+					<meta
+						property="og:title"
+						content="Melvin Cayas - Full Stack Web Developer"
+					/>
+					<meta
+						property="og:description"
+						content="Let's make an impact together!"
+					/>
+					<meta
+						property="og:image"
+						content="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+					/>
+					<meta property="og:locale" content="en_US" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
