@@ -9,7 +9,9 @@ const MobileMenu = props => {
 					onClick={props.onClose}
 					className={mobileClasses["mobile-close-button"]}
 				>
-					<i class={`fas fa-times ${mobileClasses["mobile-close-icon"]}`}></i>
+					<i
+						className={`fas fa-times ${mobileClasses["mobile-close-icon"]}`}
+					></i>
 				</button>
 			</div>
 			<LinkContainer onClose={props.onClose} />
