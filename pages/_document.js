@@ -6,7 +6,7 @@ class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<html lang="en-US" />
-					<meta charset="utf-8" />
+					<meta charSet="utf-8" />
 					<meta name="author" content="Melvin Cayas" />
 					<meta
 						name="description"
@@ -36,10 +36,6 @@ class MyDocument extends Document {
 					<meta name="twitter:card" content="summary" />
 					<meta name="twitter:site" content="@melvincayas" />
 					<meta
-						name="twitter:title"
-						content="Melvin Cayas - Full Stack Web Developer"
-					/>
-					<meta
 						name="twitter:description"
 						content="Let's make an impact together!"
 					/>
@@ -59,10 +55,7 @@ class MyDocument extends Document {
 					/>
 					<meta property="og:url" content="https://www.melvincayas.com" />
 					<meta property="og:type" content="website" />
-					<meta
-						property="og:title"
-						content="Melvin Cayas - Full Stack Web Developer"
-					/>
+					<meta property="og:site_name" content="Melvin Cayas" />
 					<meta
 						property="og:description"
 						content="Let's make an impact together!"

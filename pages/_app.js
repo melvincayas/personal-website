@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import FormProvider from "../components/store/FormProvider";
-import Head from "next/head";
 import Layout from "../components/UI/Layout";
 import LoadingScreen from "../components/UI/LoadingScreen";
 import "../styles/global.css";
@@ -28,9 +27,6 @@ const MyApp = ({ Component, pageProps }) => {
 
 	return (
 		<Fragment>
-			<Head>
-				<title>Melvin Cayas</title>
-			</Head>
 			<FormProvider>
 				<Layout>
 					{isPageLoading ? <LoadingScreen /> : <Component {...pageProps} />}

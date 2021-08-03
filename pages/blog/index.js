@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import PostCard from "../../components/Blog/PostCard";
 import blogLogo from "../../public/assets/bloglogo.png";
@@ -7,6 +8,11 @@ import blogClasses from "../../styles/Blog/Blog.module.css";
 const Blog = ({ hashnodePosts }) => {
 	return (
 		<Fragment>
+			<Head>
+				<meta name="twitter:title" content="Melvin's Blog Posts" />
+				<meta property="og:url" content="https://www.melvincayas.com/blog" />
+				<title>Blog | Melvin Cayas</title>
+			</Head>
 			<figure className={blogClasses["blog-logo-container"]}>
 				<a
 					className={blogClasses["blog-logo"]}

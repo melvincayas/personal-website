@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+import Head from "next/head";
 import { useContext } from "react";
 import { FormContext } from "../../components/store/FormProvider";
 import Card from "../../components/UI/Card";
@@ -13,10 +15,17 @@ const Contact = () => {
 	if (isSendingForm) return <LoadingScreen />;
 
 	return (
-		<Card className={contactClasses.container}>
-			{isFillingForm ? <Form /> : <FormReceived />}
-			<SocialMediaLinks />
-		</Card>
+		<Fragment>
+			<Head>
+				<meta name="twitter:title" content="Contact Melvin Cayas" />
+				<meta property="og:url" content="https://www.melvincayas.com/Contact" />
+				<title>Contact | Melvin Cayas</title>
+			</Head>
+			<Card className={contactClasses.container}>
+				{isFillingForm ? <Form /> : <FormReceived />}
+				<SocialMediaLinks />
+			</Card>
+		</Fragment>
 	);
 };
 
