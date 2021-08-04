@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Image from "next/image";
 import NextHead from "../../components/UI/NextHead";
 import PostCard from "../../components/Blog/PostCard";
@@ -6,12 +7,13 @@ import blogClasses from "../../styles/Blog/Blog.module.css";
 
 const Blog = ({ hashnodePosts }) => {
 	return (
-		<NextHead
-			twitterTitle="Melvin's Blog Posts"
-			metaUrl="https://www.melvincayas.com/blog"
-			description="Check out Melvin's blog posts about coding and life!"
-			title="Melvin Cayas | Blog"
-		>
+		<Fragment>
+			<NextHead
+				twitterTitle="Melvin's Blog Posts"
+				metaUrl="https://www.melvincayas.com/blog"
+				description="Check out Melvin's blog posts about coding and life!"
+				title="Melvin Cayas | Blog"
+			/>
 			<figure className={blogClasses["blog-logo-container"]}>
 				<a
 					className={blogClasses["blog-logo"]}
@@ -32,7 +34,7 @@ const Blog = ({ hashnodePosts }) => {
 					See all posts
 				</a>
 			</aside>
-		</NextHead>
+		</Fragment>
 	);
 };
 

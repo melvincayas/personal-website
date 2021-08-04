@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 class MyDocument extends Document {
 	render() {
@@ -68,7 +67,6 @@ class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 						rel="stylesheet"
 					/>
-					<Script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></Script>
 				</Head>
 				<body>
 					<Main />

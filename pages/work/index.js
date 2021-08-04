@@ -8,18 +8,19 @@ import next from "next";
 
 const Work = () => {
 	return (
-		<NextHead
-			twitterTitle="Work by Melvin Cayas"
-			metaUrl="https://www.melvincayas.com/work"
-			description="Check out Melvin's coding projects!"
-			title="Melvin Cayas | Work"
-		>
+		<Fragment>
+			<NextHead
+				twitterTitle="Work by Melvin Cayas"
+				metaUrl="https://www.melvincayas.com/work"
+				description="Check out Melvin's coding projects!"
+				title="Melvin Cayas | Work"
+			/>
 			<section className={workClasses.container}>
 				{projects.map(project => (
 					<ProjectCard key={project.id} project={project} />
 				))}
 			</section>
-		</NextHead>
+		</Fragment>
 	);
 };
 
