@@ -1,9 +1,6 @@
 import socialMediaClasses from "../../styles/UI/SocialMediaLinks.module.css";
 
 const SocialMediaIcon = props => {
-	if (!props.type) {
-	}
-
 	return (
 		<a
 			className={`${socialMediaClasses.link} ${props.className}`}
