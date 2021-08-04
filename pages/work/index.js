@@ -1,10 +1,8 @@
 import { Fragment } from "react";
-import Head from "next/head";
 import NextHead from "../../components/UI/NextHead";
 import ProjectCard from "../../components/Work/ProjectCard";
 import { projects } from "../../public/data/work-data";
 import workClasses from "../../styles/Work/Work.module.css";
-import next from "next";
 
 const Work = () => {
 	return (
