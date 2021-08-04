@@ -3,5 +3,6 @@
 	"env": {
 		"jest/globals": true
 	},
+	"extends": "next",
 	"parser": "babel-eslint"
 }
