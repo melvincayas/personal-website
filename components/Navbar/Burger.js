@@ -16,7 +16,7 @@ const Burger = () => {
 			onClick={menuToggleHandler}
 			className={navbarClasses["burger-container"]}
 		>
-			<i class={`fas fa-bars ${navbarClasses["burger-icon"]}`}></i>
+			<i className={`fas fa-bars ${navbarClasses["burger-icon"]}`}></i>
 		</button>
 	);
 };

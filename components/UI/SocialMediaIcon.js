@@ -1,12 +1,15 @@
 import socialMediaClasses from "../../styles/UI/SocialMediaLinks.module.css";
 
 const SocialMediaIcon = props => {
+	if (!props.type) {
+	}
+
 	return (
 		<a
 			className={`${socialMediaClasses.link} ${props.className}`}
+			target="_blank"
+			rel="noreferrer noopener"
 			href={props.href}
-			target={props.type === "sameTab" ? "" : "_blank"}
-			rel={props.type === "sameTab" ? "" : "noreferrer noopener"}
 		>
 			{props.children}
 		</a>

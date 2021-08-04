@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
 	render() {
@@ -47,7 +48,7 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
 						integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-						crossorigin="anonymous"
+						crossOrigin="anonymous"
 					/>
 					<meta property="og:type" content="website" />
 					<meta property="og:site_name" content="Melvin Cayas" />
@@ -62,12 +63,12 @@ class MyDocument extends Document {
 					<meta property="og:locale" content="en_US" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
-					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+					<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 					<link
 						href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 						rel="stylesheet"
 					/>
-					<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+					<Script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></Script>
 				</Head>
 				<body>
 					<Main />

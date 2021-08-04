@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps }) => {
 			router.events.off("routeChangeComplete", endPageLoad);
 			router.events.off("routeChangeError", endPageLoad);
 		};
-	}, []);
+	}, [router.events]);
 
 	return (
 		<Fragment>
