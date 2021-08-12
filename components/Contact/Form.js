@@ -7,6 +7,9 @@ import ContactTitle from "./ContactTitle";
 import ReCAPTCHA from "react-google-recaptcha";
 import contactClasses from "../../styles/Contact/Contact.module.css";
 
+/*global fetch*/
+/*global process*/
+
 const Form = () => {
 	const [isTriedToSubmit, setIsTriedToSubmit] = useState(false);
 	const [formToken, setFormToken] = useState(null);

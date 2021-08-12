@@ -4,6 +4,8 @@ import Image from "next/image";
 import Card from "../UI/Card";
 import blogClasses from "../../styles/Blog/Blog.module.css";
 
+/*global process*/
+
 const LinkWrapper = props => {
 	return (
 		<a
