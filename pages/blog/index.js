@@ -38,7 +38,7 @@ const Blog = ({ hashnodePosts }) => {
 	);
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	const GET_HASHNODE_POSTS = `
 		query GetHashnodePosts($page: Int!) {
 			user(username: "melvincayas") {
