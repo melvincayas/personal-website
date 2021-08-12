@@ -5,6 +5,9 @@ import PostCard from "../../components/Blog/PostCard";
 import blogLogo from "../../public/assets/bloglogo.png";
 import blogClasses from "../../styles/Blog/Blog.module.css";
 
+/*global process*/
+/*global fetch*/
+
 const Blog = ({ hashnodePosts }) => {
 	return (
 		<Fragment>
