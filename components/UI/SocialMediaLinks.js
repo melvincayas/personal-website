@@ -12,7 +12,7 @@ const SocialMediaLinks = () => {
 			</SocialMediaIcon>
 			<SocialMediaIcon
 				className={socialMediaClasses["linkedin-link"]}
-				href="https://www.linkedin.com/in/melvin-john-cayas-b3122534/"
+				href="https://www.linkedin.com/in/melvincayas"
 			>
 				<i className={`fab fa-linkedin ${socialMediaClasses.icon}`}></i>
 			</SocialMediaIcon>
