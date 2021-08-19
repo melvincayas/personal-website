@@ -45,10 +45,10 @@ const transporter = nodemailer.createTransport({
 3. Include this in your `.env` file:
 
 ```
-email=YOUR_DUMMY_EMAIL
-password=YOUR_DUMMY_EMAIL_PASSWORD
-personalEmail=YOUR_PERSONAL_EMAIL
-secretKey=YOUR_GOOGLE_RECAPTCHA_SECRET_KEY
+DUMMY_EMAIL=YOUR_DUMMY_EMAIL
+DUMMY_PASSWORD=YOUR_DUMMY_EMAIL_PASSWORD
+PERSONAL_EMAIL=YOUR_PERSONAL_EMAIL
+SECRET_KEY=YOUR_GOOGLE_RECAPTCHA_SECRET_KEY
 ```
 
 4. Include this in your `.env.local` file:
@@ -69,10 +69,10 @@ NEXT_PUBLIC_SITE_KEY=YOUR_GOOGLE_RECAPTCHA_SITE_KEY
 
 ## Contact
 
-Melvin Cayas
+Melvin Cayas  
 [cayasmj@gmail.com](mailto:cayasmj@gmail.com?subject=[GitHub])  
 [melvincayas.com](https://melvincayas.com/)
 
-Links
+Links  
 [Live Version](https://melvincayas.com/)  
 [GitHub](https://github.com/melvincayas/personal-website)

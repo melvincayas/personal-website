@@ -2,7 +2,7 @@ const checkUserValidation = () => {
 	return async (req, res, next) => {
 		try {
 			require("dotenv").config();
-			const SECRET_KEY = process.env.secretKey;
+			const SECRET_KEY = process.env.SECRET_KEY;
 			const { formToken } = req.body;
 
 			const response = await fetch(

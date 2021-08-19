@@ -1,16 +1,16 @@
 const sendMail = async (req, res) => {
 	try {
 		require("dotenv").config();
-		const EMAIL = process.env.email;
-		const PASSWORD = process.env.password;
-		const PERSONAL_EMAIL = process.env.personalEmail;
+		const DUMMY_EMAIL = process.env.DUMMY_EMAIL;
+		const DUMMY_PASSWORD = process.env.DUMMY_PASSWORD;
+		const PERSONAL_EMAIL = process.env.PERSONAL_EMAIL;
 		const nodemailer = require("nodemailer");
 		const transporter = nodemailer.createTransport({
 			port: 465,
 			host: "smtp.gmail.com",
 			auth: {
-				user: EMAIL,
-				pass: PASSWORD,
+				user: DUMMY_EMAIL,
+				pass: DUMMY_PASSWORD,
 			},
 			secure: true,
 		});
@@ -19,7 +19,7 @@ const sendMail = async (req, res) => {
 			req.body;
 
 		const emailMessage = {
-			from: EMAIL,
+			from: DUMMY_EMAIL,
 			to: PERSONAL_EMAIL,
 			subject: `"${enteredSubject}" from ${enteredName}`,
 			text: `${enteredMessage} ${enteredName} at ${enteredEmail}`,
