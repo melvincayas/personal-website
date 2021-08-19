@@ -57,6 +57,32 @@ SECRET_KEY=YOUR_GOOGLE_RECAPTCHA_SECRET_KEY
 NEXT_PUBLIC_SITE_KEY=YOUR_GOOGLE_RECAPTCHA_SITE_KEY
 ```
 
+## Contributing
+
+I'm always open to improving my code and the best way to do that is by having others critique it. If you see any bugs or opportunities to refactor, please let me know. It would be **highly appreciated**!
+
+1. Fork this repo
+
+2. Create your branch for improvement
+
+```
+git checkout -b your-improvement
+```
+
+3. Commit your changes
+
+```
+git commit -m "Refactored the code"
+```
+
+4. Push to your branch
+
+```
+git push origin your-improvement
+```
+
+5. Open a Pull Request
+
 ## Acknowledgements
 
 - [Google ReCAPTCHA](https://www.google.com/recaptcha/about/)
