@@ -24,11 +24,11 @@ npm install
 
 ## Using the Contact Form
 
-To use the contact form, you must set up your e-mail information and the Google RECAPTCHA:
+To use the contact form, you must set up your e-mail information and the Google ReCAPTCHA:
 
-1. Sign up for a Google ReCAPTCHA API key [here](https://developers.google.com/recaptcha/intro).
+1. Sign up for your Google ReCAPTCHA API key pair [here](https://developers.google.com/recaptcha/intro).
 
-2. Create a dummy e-mail account solely for sending e-mails to your personal account. Nodemailer will use this to send an e-mail of the filled-out contact form to your personal e-mail. This repo is currently setup for [Google e-mails](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp). If you have an e-mail outside of Google, you may have to modify the code below in `sendMail.js`:
+2. Create a dummy e-mail account solely for sending e-mails to your personal account. Nodemailer will use this to send an e-mail of the filled-out contact form to your personal e-mail. This repo is currently setup for [Google e-mails](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp). If you have an e-mail outside of Google, you'll have to modify the code below in `sendMail.js`:
 
 ```javascript
 const transporter = nodemailer.createTransport({
@@ -48,13 +48,13 @@ const transporter = nodemailer.createTransport({
 email=YOUR_DUMMY_EMAIL
 password=YOUR_DUMMY_EMAIL_PASSWORD
 personalEmail=YOUR_PERSONAL_EMAIL
-secretKey=GOOGLE_RECAPTCHA_KEY
+secretKey=YOUR_GOOGLE_RECAPTCHA_SECRET_KEY
 ```
 
 4. Include this in your `.env.local` file:
 
 ```
-NEXT_PUBLIC_SITE_KEY=GOOGLE_RECAPTCHA_KEY
+NEXT_PUBLIC_SITE_KEY=YOUR_GOOGLE_RECAPTCHA_SITE_KEY
 ```
 
 ## Acknowledgements
@@ -70,17 +70,9 @@ NEXT_PUBLIC_SITE_KEY=GOOGLE_RECAPTCHA_KEY
 ## Contact
 
 Melvin Cayas
-[cayasmj@gmail.com](mailto:cayasmj@gmail.com?subject=[GitHub])
+[cayasmj@gmail.com](mailto:cayasmj@gmail.com?subject=[GitHub])  
 [melvincayas.com](https://melvincayas.com/)
 
 Links
-[Live Version](https://melvincayas.com/)
+[Live Version](https://melvincayas.com/)  
 [GitHub](https://github.com/melvincayas/personal-website)
-
-```
-
-```
-
-```
-
-```
