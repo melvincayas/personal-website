@@ -25,14 +25,14 @@ const PostCard = ({ post }) => {
 	return (
 		<Card className={blogClasses["post-card"]}>
 			<LinkWrapper url={url}>
-				<div className={blogClasses["post-column"]}>
+				<article className={blogClasses["post-column"]}>
 					<p className={blogClasses["post-title"]}>{post.title}</p>
 					<p className={blogClasses["post-date"]}>
 						{moment(post.dateAdded).format("MMMM D, YYYY")}
 					</p>
 					<p className={blogClasses["post-description"]}>{post.brief}</p>
-				</div>
-				<div className={blogClasses["post-picture-column"]}>
+				</article>
+				<figure className={blogClasses["post-picture-column"]}>
 					<Image
 						className={blogClasses["post-image"]}
 						src={post.coverImage}
@@ -41,7 +41,7 @@ const PostCard = ({ post }) => {
 						height={300}
 						alt={post.title}
 					/>
-				</div>
+				</figure>
 			</LinkWrapper>
 		</Card>
 	);
