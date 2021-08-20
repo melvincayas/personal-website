@@ -1,9 +1,9 @@
 export const projects = [
 	{
 		id: 1,
-		title: "Personal Website",
+		title: "My Personal Website",
 		content:
-			"The website you're currently on! My mobile-friendly personal page to showcase my work and blog. Feel free to fork the repo and use it as a template for your own page!",
+			"The website you're currently on! My mobile-friendly personal page to showcase my work and my blog. Feel free to fork the repo and use it as a template for your own page!",
 		live: "https://melvincayas.com",
 		github: "https://github.com/melvincayas/personal-website",
 		tags: ["HTML", "CSS", "React", "Next.js", "Bulma"],
