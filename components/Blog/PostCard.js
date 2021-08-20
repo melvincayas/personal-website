@@ -28,7 +28,7 @@ const PostCard = ({ post }) => {
 				<article className={blogClasses["post-column"]}>
 					<p className={blogClasses["post-title"]}>{post.title}</p>
 					<p className={blogClasses["post-date"]}>
-						{moment(post.dateAdded).format("MMMM D, YYYY")}
+						<time>{moment(post.dateAdded).format("MMMM D, YYYY")}</time>
 					</p>
 					<p className={blogClasses["post-description"]}>{post.brief}</p>
 				</article>
