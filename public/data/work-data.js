@@ -36,6 +36,14 @@ export const projects = [
 	},
 	{
 		id: 4,
+		title: "Choice Makr",
+		content:
+			"React Native project that helps users make a random decision from a list of choices they input.",
+		github: "https://github.com/melvincayas/choice-makr",
+		tags: ["React Native", "React"],
+	},
+	{
+		id: 5,
 		title: "Surely Noted",
 		content:
 			"Currently on-going project with user authentication for creating, sharing, and leaving notes on To-Do lists.",
