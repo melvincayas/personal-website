@@ -24,9 +24,9 @@ npm install
 
 ## Using the Contact Form
 
-To use the contact form, you must set up your e-mail information and the Google ReCAPTCHA:
+To use the contact form, you must set up your e-mail information and the Google reCAPTCHA:
 
-1. Sign up for your Google ReCAPTCHA API key pair [here](https://developers.google.com/recaptcha/intro).
+1. Sign up for your Google reCAPTCHA API key pair [here](https://developers.google.com/recaptcha/intro).
 
 2. Create a dummy e-mail account solely for sending e-mails to your personal account. Nodemailer will use this to send an e-mail of the filled-out contact form to your personal e-mail. This repo is currently setup for [Google e-mails](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp). If you have an e-mail outside of Google, you'll have to modify the code below in `sendMail.js`:
 
