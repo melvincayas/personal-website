@@ -85,7 +85,7 @@ git push origin your-improvement
 
 ## Acknowledgements
 
-- [Google ReCAPTCHA](https://www.google.com/recaptcha/about/)
+- [Google reCAPTCHA](https://www.google.com/recaptcha/about/)
 - [Hashnode API](https://api.hashnode.com/)
 - [FontAwesome](https://fontawesome.com/)
 - [Simple Icons](https://simpleicons.org/)
