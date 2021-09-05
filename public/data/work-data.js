@@ -29,6 +29,7 @@ export const projects = [
 			"CSS",
 			"JavaScript",
 			"EJS",
+			"Express",
 			"Node.js",
 			"MongoDB",
 			"Bootstrap",
@@ -48,6 +49,15 @@ export const projects = [
 		content:
 			"Currently on-going project with user authentication for creating, sharing, and leaving notes on To-Do lists.",
 		github: "https://github.com/melvincayas/surely-noted",
-		tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "React", "Redux"],
+		tags: [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Express",
+			"Node.js",
+			"MongoDB",
+			"React",
+			"Redux",
+		],
 	},
 ];
