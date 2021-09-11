@@ -37,27 +37,19 @@ export const projects = [
 	},
 	{
 		id: 4,
+		title: "Image Gallery",
+		content:
+			"Image gallery built with Next.js using the Unsplash API. Includes infinite scrolling and a button to toggle the view from list to grid.",
+		live: "https://image-gallery-melvin.vercel.app/",
+		github: "https://github.com/melvincayas/image-gallery",
+		tags: ["React", "Next.js"],
+	},
+	{
+		id: 5,
 		title: "Choice Makr",
 		content:
 			"React Native project that helps users make a random decision from a list of choices they input.",
 		github: "https://github.com/melvincayas/choice-makr",
 		tags: ["React Native", "React"],
-	},
-	{
-		id: 5,
-		title: "Surely Noted",
-		content:
-			"Currently on-going project with user authentication for creating, sharing, and leaving notes on To-Do lists.",
-		github: "https://github.com/melvincayas/surely-noted",
-		tags: [
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"Express",
-			"Node.js",
-			"MongoDB",
-			"React",
-			"Redux",
-		],
 	},
 ];
